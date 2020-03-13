@@ -1,0 +1,8 @@
+#ifndef PROJETOLI2_CAMADA_DE_DADOS_H
+#define PROJETOLI2_CAMADA_DE_DADOS_H
+
+typedef enum CASA;
+typedef struct JOGADA;
+
+typedef JOGADA JOGADAS[32];
+#endif //PROJETOLI2_CAMADA_DE_DADOS_H
