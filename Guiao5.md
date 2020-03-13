@@ -13,15 +13,21 @@ Este módulo é com certeza um dos mais importantes do programa, uma vez que é 
 
 **jogador_atual**: Indica qual é o jogador a jogar.
 
-**inicializar_estado**: 
-Esta função cria um estado vazio (com o tabuleiro inicializado), onde é identificado a posição vencedora do jogador 1 (*POS1*), a posição vencedora do jogador 2 (*POS2*) e onde se começa a jogar no tabuleiro (*BRANCA*). As referências em itálico supramencionadas dizem respeito a uma das estruturas pré-definidas pelos docentes no *header file* da **Camada de Dados** onde correspondem aos tipos de casas, sendo que as restantes após uma jogada, a casa anterior fica preenchida por '#' (*PRETA*).
+**inicializar_estado**: Esta função cria um estado vazio (com o tabuleiro
+inicializado), onde é identificado a posição vencedora do jogador 1 (*POS1*), a posição vencedora do jogador 2 (*POS2*) e onde se começa a jogar no tabuleiro (*BRANCA*).
+As referências em itálico supramencionadas dizem respeito a uma das estruturas pré-definidas pelos docentes no *header file* da **Camada de Dados** onde correspondem aos tipos de casas, sendo que as restantes após uma jogada, a casa anterior fica preenchida por '#' (*PRETA*).
+
 ---
 
 ### Lógica do programa
 Neste módulo é implementada a função que incrementa uma jogada, tal como o título refere, nste módulo é tratada a lógica do jogo em si. Assim, é criada a função **jogar**.
  
-**jogar**: 
-Esta função recebe o estado atual e uma coordenada e modifica o estado ao jogar na casa correta se a jogada for válida. A função devolve verdadeiro (valor diferente de zero) se for possível jogar e falso (zero) caso não seja possível. Ao fim de realizar a jogada, a função mostra o tabuleiro com a jogada efectuada com a função **mostrar_tabuleiro** do módulo seguidamente explicado
+**jogar**: Esta função recebe o estado atual e uma coordenada e modifica
+o estado ao jogar na casa correta se a jogada for válida. A função devolve
+verdadeiro (valor diferente de zero) se for possível jogar e falso (zero) caso
+não seja possível. 
+Ao fim de realizar a jogada, a função mostra o tabuleiro com a jogada efectuada com a função **mostrar_tabuleiro** do módulo seguidamente explicado
+
 ---
 ### Interface do Programa
 Neste módulo seguem duas tarefas a implementar: 
