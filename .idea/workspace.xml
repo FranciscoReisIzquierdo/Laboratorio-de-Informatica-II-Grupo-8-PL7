@@ -11,17 +11,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2094f7f-6a0a-404e-844e-877abb960191" name="Default Changelist" comment="Segundo commit">
-      <change afterPath="$PROJECT_DIR$/Guiao5.md" afterDir="false" />
+    <list default="true" id="d2094f7f-6a0a-404e-844e-877abb960191" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Camada de Dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/Camada de Dados.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Camada de Dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/Camada de Dados.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Guiao5.md" beforeDir="false" afterPath="$PROJECT_DIR$/Guiao5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <updated>1583944297281</updated>
       <workItem from="1583944299893" duration="8057000" />
       <workItem from="1584052639482" duration="8031000" />
-      <workItem from="1584060994780" duration="3864000" />
+      <workItem from="1584060994780" duration="7572000" />
     </task>
     <task id="LOCAL-00001" summary="Segundo commit">
       <created>1584061082743</created>
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584061301008</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Guiao 5">
+      <created>1584103623867</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584103623867</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,13 +113,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Segundo commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit" />
+    <MESSAGE value="Guiao 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guiao 5" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="0" key="CommitChangelistDialog2" timestamp="1584103541475">
+    <state x="500" y="0" key="CommitChangelistDialog2" timestamp="1584103622710">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584103541475" />
+    <state x="500" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584103622710" />
     <state x="475" y="133" key="FileChooserDialogImpl" timestamp="1584052679650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -134,10 +141,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584103518329" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584061309869">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584103640560">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584061309869" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584103640560" />
     <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1584060994408">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
