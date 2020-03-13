@@ -1,8 +1,7 @@
-#include "Logica.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#define BUF_SIZE 1024
+#include "Logica.h"
 
 void mostrar_tabuleiro(ESTADO *e);
 int interpretador(ESTADO *e);

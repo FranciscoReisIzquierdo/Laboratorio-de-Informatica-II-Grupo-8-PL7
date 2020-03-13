@@ -1,8 +1,9 @@
-#include "Logica.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #define BUF_SIZE 1024
+#include "Camada de Dados.h"
+#include "Interface.h"
 
 void mostrar_tabuleiro(ESTADO *e) {
     for (int i=0; i < 8; i++) {
@@ -29,5 +30,3 @@ int interpretador(ESTADO *e) {
     }
     return 1;
 }
-
-#include "Interface.h"
