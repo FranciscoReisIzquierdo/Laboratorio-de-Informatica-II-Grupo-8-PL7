@@ -13,7 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d2094f7f-6a0a-404e-844e-877abb960191" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Guiao5.md" beforeDir="false" afterPath="$PROJECT_DIR$/Guiao5.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1YzTCmTmSdm7XjbtNrQGw0bAoDn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +62,8 @@
       <updated>1583944297281</updated>
       <workItem from="1583944299893" duration="8057000" />
       <workItem from="1584052639482" duration="8031000" />
-      <workItem from="1584060994780" duration="8639000" />
+      <workItem from="1584060994780" duration="9371000" />
+      <workItem from="1584633390519" duration="8631000" />
     </task>
     <task id="LOCAL-00001" summary="Segundo commit">
       <created>1584061082743</created>
@@ -102,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1584112526917</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Guiao 5 Atualizado">
+      <created>1584112743057</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584112743057</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Guiao 5 Atualizado">
+      <created>1584112867394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584112867394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,41 +144,45 @@
     <option name="LAST_COMMIT_MESSAGE" value="Guiao 5 Atualizado" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="500" y="0" key="CommitChangelistDialog2" timestamp="1584112742124">
+    <state x="500" y="0" key="CommitChangelistDialog2" timestamp="1584112866505">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="500" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584112742124" />
+    <state x="500" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1584112866505" />
     <state x="475" y="133" key="FileChooserDialogImpl" timestamp="1584052679650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="133" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1584052679650" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584103518329">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1584642072519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584103518329" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584103518329">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1584642072519" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1584642072519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584103518329" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584103518328">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1584642072519" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1584642072519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584103518328" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584103518329">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1584642072519" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1584642072519">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584103518329" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584112744354">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1584642072519" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584112869067">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584112744354" />
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1584060994408">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584112869067" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1584633395084">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584060994408" />
-    <state x="408" y="13" key="refactoring.ChangeSignatureDialog" timestamp="1584102297301">
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1584633395084" />
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584645191718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="408" y="13" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1584102297301" />
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1584645191718" />
+    <state x="408" y="13" key="refactoring.ChangeSignatureDialog" timestamp="1584639022048">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="408" y="13" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1584639022048" />
   </component>
 </project>
