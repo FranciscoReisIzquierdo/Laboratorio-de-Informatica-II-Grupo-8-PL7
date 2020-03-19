@@ -36,6 +36,5 @@ int jogoAcabou(ESTADO *e){
     return 0;
 }
 
-int
 
 

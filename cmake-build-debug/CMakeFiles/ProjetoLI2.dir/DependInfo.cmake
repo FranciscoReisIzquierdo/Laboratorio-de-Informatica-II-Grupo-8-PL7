@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/Camada de Dados.c" "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj"
-  "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/Interface.c" "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj"
-  "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/Logica.c" "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj"
-  "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/main.c" "C:/Users/Utilizador/Laboratorio-de-Informatica-II-Grupo-8-PL7/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj"
+  "C:/Users/franc/CLionProjects/LI2/Camada de Dados.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj"
+  "C:/Users/franc/CLionProjects/LI2/Interface.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj"
+  "C:/Users/franc/CLionProjects/LI2/Logica.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj"
+  "C:/Users/franc/CLionProjects/LI2/main.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
