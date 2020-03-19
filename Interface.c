@@ -34,5 +34,5 @@ int interpretador(ESTADO *e) {
 }
 
 void prompt(ESTADO *e){
-    printf("Player%d Numero da Jogada %d", (e-> jogador_atual), (e->num_jogadas));
+    printf("Player:%d Numero da Jogada:%d", (e-> jogador_atual), (e->num_jogadas));
 }
