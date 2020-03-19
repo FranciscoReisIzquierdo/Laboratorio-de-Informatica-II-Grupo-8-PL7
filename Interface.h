@@ -6,6 +6,7 @@
 void mostrar_tabuleiro(ESTADO *e);
 int interpretador(ESTADO *e);
 
+
 #ifndef PROJETOLI2_INTERFACE_H
 #define PROJETOLI2_INTERFACE_H
 
