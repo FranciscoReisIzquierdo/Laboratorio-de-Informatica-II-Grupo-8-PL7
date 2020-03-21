@@ -20,5 +20,10 @@ typedef struct {
 } ESTADO;
 
 ESTADO *inicializar_estado();
+int giveUltColuna(ESTADO *e);
+int giveUltLinha(ESTADO *e);
+void incrJogada(ESTADO *e);
+void changePlayer(ESTADO *e);
+int winner(ESTADO *e);
 
 #endif //PROJETOLI2_CAMADA_DE_DADOS_H

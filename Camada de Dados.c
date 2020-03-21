@@ -1,5 +1,6 @@
 #include "Camada de Dados.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
@@ -16,4 +17,30 @@ ESTADO *inicializar_estado() {
         }
     }
     return e;
+}
+
+int giveUltColuna(ESTADO *e){
+    int c= e-> ultima_jogada.coluna;
+    return c;
+}
+
+int giveUltLinha(ESTADO *e){
+    int l = e-> ultima_jogada.linha;
+    return l;
+}
+
+void incrJogada(ESTADO *e){
+    e-> num_jogadas++;
+}
+
+void changePlayer(ESTADO *e){
+    if (e-> jogador_atual== 1) e-> jogador_atual=2;
+    else e->jogador_atual=1;
+}
+
+int winner(ESTADO *e){
+    int r;
+    if (e-> jogador_atual== 1) r=2;
+    else r=1;
+    return r;
 }
