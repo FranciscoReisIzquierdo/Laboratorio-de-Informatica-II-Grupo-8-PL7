@@ -44,3 +44,24 @@ int winner(ESTADO *e){
     else r=1;
     return r;
 }
+
+int linhaAnterior(ESTADO *e){
+    int line;
+    int linha= e-> ultima_jogada.linha;
+        line= 7- linha +1;
+    return line;
+}
+
+char colunaAnterior(ESTADO *e){
+    char column;
+    int coluna= e-> ultima_jogada.coluna;
+    if(coluna== 0) column= 'a';
+    else if (coluna== 1) column= 'b';
+    else if(coluna== 2) column= 'c';
+    else if(coluna== 3) column= 'd';
+    else if(coluna== 4) column= 'e';
+    else if(coluna== 5) column= 'f';
+    else if(coluna== 6) column= 'g';
+    else if(coluna== 7) column= 'h';
+    return column;
+}

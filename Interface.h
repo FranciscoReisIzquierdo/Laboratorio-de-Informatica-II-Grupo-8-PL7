@@ -5,9 +5,9 @@
 
 void mostrar_tabuleiro(ESTADO *e);
 int interpretador(ESTADO *e);
-void prompt(ESTADO *e, COORDENADA c);
+void prompt(ESTADO *e);
 void guarda_tabuleiro(ESTADO *e, FILE *file);
-
+void le_Tabuleiro(ESTADO *e, FILE *file);
 
 #ifndef PROJETOLI2_INTERFACE_H
 #define PROJETOLI2_INTERFACE_H

@@ -56,6 +56,14 @@ int jogoAcabou(ESTADO *e, COORDENADA c){
         printf("Jogador %d venceu o jogo! Parabens", winner(e));
         return 1;
     }
+    else if(e-> tab[6- c.linha][7]== PRETA && e-> tab[6- c.linha][c.coluna-1]== PRETA && e-> tab [7- c.linha][c.coluna-1] == PRETA){
+        printf("Jogador %d venceu o jogo! Parabens", winner(e));
+        return 1;
+    }
+    else if(e-> tab[8- c.linha][0]== PRETA && e-> tab[8- c.linha][c.coluna+1]== PRETA && e-> tab [7- c.linha][c.coluna+1] == PRETA){
+        printf("Jogador %d venceu o jogo! Parabens", winner(e));
+    return 1;
+}
     else return 0;
 }
 
