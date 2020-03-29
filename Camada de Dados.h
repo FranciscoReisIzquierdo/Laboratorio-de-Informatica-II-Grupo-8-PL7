@@ -27,5 +27,7 @@ void changePlayer(ESTADO *e);
 int winner(ESTADO *e);
 int linhaAnterior(ESTADO *e);
 char colunaAnterior(ESTADO *e);
+int linhaaa(int line);
+char colunaaa(int column);
 
 #endif //PROJETOLI2_CAMADA_DE_DADOS_H

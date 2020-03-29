@@ -8,7 +8,6 @@ int jogar(ESTADO *e, COORDENADA c) {
             e->tab[ultima.linha][ultima.coluna] = PRETA;
             e->ultima_jogada.linha = 7- c.linha;
             e->ultima_jogada.coluna = c.coluna;
-            mostrar_tabuleiro(e);
             incrJogada(e);
             changePlayer(e);
     return 1;

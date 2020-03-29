@@ -3,7 +3,13 @@
 
 int main() {
     ESTADO *e = inicializar_estado();
-    mostrar_tabuleiro(e);
-    interpretador(e);
+    prompt(e);
+
+
+    /*FILE * file;
+    file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r+");
+    le_Tabuleiro(e,file);
+    mostrar_tabuleiro(e);*/
+
     return 0;
 }

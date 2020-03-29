@@ -30,12 +30,16 @@ int giveUltLinha(ESTADO *e){
 }
 
 void incrJogada(ESTADO *e){
-    e-> num_jogadas++;
+    if (e-> jogador_atual== 2)
+        e-> num_jogadas++;
+    else e-> num_jogadas = e->num_jogadas;
 }
 
 void changePlayer(ESTADO *e){
-    if (e-> jogador_atual== 1) e-> jogador_atual=2;
-    else e->jogador_atual=1;
+    if (e-> jogador_atual== 1)
+        e->jogador_atual = 2;
+    else
+        e->jogador_atual=1;
 }
 
 int winner(ESTADO *e){
@@ -64,4 +68,23 @@ char colunaAnterior(ESTADO *e){
     else if(coluna== 6) column= 'g';
     else if(coluna== 7) column= 'h';
     return column;
+}
+
+int linhaaa(int line){
+    int l;
+    l= line +1;
+    return l;
+}
+
+char colunaaa(int column){
+    char c;
+    if(column== 0) c= 'a';
+    else if (column== 1) c= 'b';
+    else if(column== 2) c= 'c';
+    else if(column== 3) c= 'd';
+    else if(column== 4) c= 'e';
+    else if(column== 5) c= 'f';
+    else if(column== 6) c= 'g';
+    else if(column== 7) c= 'h';
+    return c;
 }
