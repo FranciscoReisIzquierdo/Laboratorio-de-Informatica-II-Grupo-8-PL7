@@ -35,32 +35,32 @@ int jogadaValida(ESTADO *e, COORDENADA c) {
 
 int jogoAcabou(ESTADO *e, COORDENADA c){
     if (e-> tab [7][0]== BRANCA){
-        printf("Jogador 1 venceu o jogo! Parabens!");
+        printf("Jogador 1 venceu o jogo! Parabens!\n");
         return 1;
     }
     else if (e-> tab[0][7]== BRANCA){
-        printf("Jogador 2 venceu o jogo! Parabens!");
+        printf("Jogador 2 venceu o jogo! Parabens!\n");
         return 1;
     }
 
     else if (e-> tab [6- c.linha][c.coluna]== PRETA && e-> tab [6- c.linha][1+ c.coluna]== PRETA && e-> tab [6- c.linha][c.coluna -1]== PRETA && e-> tab [8- c.linha][c.coluna]== PRETA && e-> tab [8- c.linha][c.coluna -1]== PRETA && e-> tab [8- c.linha][c.coluna +1]== PRETA){
-        printf("Jogador %d venceu o jogo! Parabens!", winner(e));
+        printf("Jogador %d venceu o jogo! Parabens!\n", winner(e));
         return 1;
         }
     else if(e-> tab[6- c.linha][7]== PRETA && e-> tab[8- c.linha][7]== PRETA && e-> tab [7- c.linha][c.coluna-1]== PRETA){
-        printf("Jogador %d venceu o jogo! Parabens!", winner(e));
+        printf("Jogador %d venceu o jogo! Parabens!\n", winner(e));
         return 1;
     }
     else if(e-> tab[6- c.linha][0]== PRETA && e-> tab[8- c.linha][0]== PRETA && e-> tab [7- c.linha][c.coluna+1] == PRETA){
-        printf("Jogador %d venceu o jogo! Parabens", winner(e));
+        printf("Jogador %d venceu o jogo! Parabens\n", winner(e));
         return 1;
     }
     else if(e-> tab[6- c.linha][7]== PRETA && e-> tab[6- c.linha][c.coluna-1]== PRETA && e-> tab [7- c.linha][c.coluna-1] == PRETA){
-        printf("Jogador %d venceu o jogo! Parabens", winner(e));
+        printf("Jogador %d venceu o jogo! Parabens\n", winner(e));
         return 1;
     }
     else if(e-> tab[8- c.linha][0]== PRETA && e-> tab[8- c.linha][c.coluna+1]== PRETA && e-> tab [7- c.linha][c.coluna+1] == PRETA){
-        printf("Jogador %d venceu o jogo! Parabens", winner(e));
+        printf("Jogador %d venceu o jogo! Parabens\n", winner(e));
     return 1;
 }
     else return 0;
