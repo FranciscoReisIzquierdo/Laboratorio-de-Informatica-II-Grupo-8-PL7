@@ -11,19 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="adda93fc-ed6b-4016-aeeb-f7c71c6953f5" name="Default Changelist" comment="Guião 6-&gt; Comandos">
+    <list default="true" id="adda93fc-ed6b-4016-aeeb-f7c71c6953f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Camada de Dados.c" beforeDir="false" afterPath="$PROJECT_DIR$/Camada de Dados.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Camada de Dados.h" beforeDir="false" afterPath="$PROJECT_DIR$/Camada de Dados.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +77,8 @@
       <workItem from="1585394558616" duration="17335000" />
       <workItem from="1585427212521" duration="2146000" />
       <workItem from="1585489121620" duration="455000" />
+      <workItem from="1585502638530" duration="151000" />
+      <workItem from="1585900884806" duration="37898000" />
     </task>
     <task id="LOCAL-00001" summary="Prompt">
       <created>1584661002019</created>
@@ -113,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584898243940</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Guião 7-&gt; Lista de movimentos (Problemas ao guardar)">
+      <created>1585502688899</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585502688899</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,33 +125,34 @@
     <MESSAGE value="Prompt" />
     <MESSAGE value="Guião 6" />
     <MESSAGE value="Guião 6-&gt; Comandos" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guião 6-&gt; Comandos" />
+    <MESSAGE value="Guião 7-&gt; Lista de movimentos (Problemas ao guardar)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guião 7-&gt; Lista de movimentos (Problemas ao guardar)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1585330975558">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1585502685857">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585330975558" />
-    <state width="1323" height="515" key="GridCell.Tab.0.bottom" timestamp="1585489587386">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585502685857" />
+    <state width="1323" height="312" key="GridCell.Tab.0.bottom" timestamp="1586021919958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585309531566" />
-    <state width="1323" height="515" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1585489587386" />
-    <state width="1323" height="515" key="GridCell.Tab.0.center" timestamp="1585489587386">
+    <state width="1323" height="312" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586021919958" />
+    <state width="1323" height="312" key="GridCell.Tab.0.center" timestamp="1586021919957">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="515" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1585489587386" />
-    <state width="1323" height="515" key="GridCell.Tab.0.left" timestamp="1585489587386">
+    <state width="1323" height="312" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586021919957" />
+    <state width="1323" height="312" key="GridCell.Tab.0.left" timestamp="1586021919957">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="515" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1585489587386" />
-    <state width="1323" height="515" key="GridCell.Tab.0.right" timestamp="1585489587386">
+    <state width="1323" height="312" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586021919957" />
+    <state width="1323" height="312" key="GridCell.Tab.0.right" timestamp="1586021919958">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="515" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585489587386" />
+    <state width="1323" height="312" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586021919958" />
     <state width="1237" height="203" key="GridCell.Tab.1.bottom" timestamp="1585345630230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -170,14 +173,14 @@
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585345630230" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1584898245661">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1585502692071">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1584898245661" />
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1585502638476">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585502692071" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1585900974149">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585502638476" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585900974149" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1584818515991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

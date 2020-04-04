@@ -5,7 +5,7 @@
 ESTADO *inicializar_estado() {
     ESTADO *e = (ESTADO *) malloc(sizeof(ESTADO));
     e->jogador_atual = 1;
-    e->num_jogadas = 0;
+    e->num_jogadas = 1;
     e->ultima_jogada.coluna = 4;
     e->ultima_jogada.linha = 3;
     for (int i=0; i<8; i++){
