@@ -14,8 +14,8 @@
     <list default="true" id="adda93fc-ed6b-4016-aeeb-f7c71c6953f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
     </list>
@@ -79,7 +79,8 @@
       <workItem from="1585427212521" duration="2146000" />
       <workItem from="1585489121620" duration="455000" />
       <workItem from="1585502638530" duration="151000" />
-      <workItem from="1585900884806" duration="42084000" />
+      <workItem from="1585900884806" duration="46036000" />
+      <workItem from="1586105315101" duration="2224000" />
     </task>
     <task id="LOCAL-00001" summary="Prompt">
       <created>1584661002019</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586022002311</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Guião 8-&gt; Finalizado (Atualizado)">
+      <created>1586027377263</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586027377263</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,33 +143,34 @@
     <MESSAGE value="Guião 6-&gt; Comandos" />
     <MESSAGE value="Guião 7-&gt; Lista de movimentos (Problemas ao guardar)" />
     <MESSAGE value="Guião 8-&gt; Finalizado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guião 8-&gt; Finalizado" />
+    <MESSAGE value="Guião 8-&gt; Finalizado (Atualizado)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guião 8-&gt; Finalizado (Atualizado)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1586021999751">
+    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1586109663061">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586021999751" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1586027357997">
+    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586109663061" />
+    <state width="1323" height="272" key="GridCell.Tab.0.bottom" timestamp="1586106570073">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585309531566" />
-    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586027357997" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1586027357997">
+    <state width="1323" height="272" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1586106570073" />
+    <state width="1323" height="272" key="GridCell.Tab.0.center" timestamp="1586106570073">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586027357997" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1586027357997">
+    <state width="1323" height="272" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1586106570073" />
+    <state width="1323" height="272" key="GridCell.Tab.0.left" timestamp="1586106570073">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586027357997" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1586027357997">
+    <state width="1323" height="272" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1586106570073" />
+    <state width="1323" height="272" key="GridCell.Tab.0.right" timestamp="1586106570073">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586027357997" />
+    <state width="1323" height="272" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586106570073" />
     <state width="1237" height="203" key="GridCell.Tab.1.bottom" timestamp="1585345630230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -182,14 +191,14 @@
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585345630230" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586022005018">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1586027378814">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586022005018" />
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1585900974149">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586027378814" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1586105315851">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585900974149" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586105315851" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1584818515991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

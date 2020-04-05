@@ -23,8 +23,6 @@ void mostrar_tabuleiro(ESTADO *e) {
 }
 
 int interpretador(ESTADO *e) {
-    //FILE * file;
-    // file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r+");
     char linha[BUF_SIZE];
     char col[2], lin[2];
     int numero;
@@ -53,7 +51,7 @@ int interpretador(ESTADO *e) {
             printf("Valor superior ao numero de jogadas efectuadas\n");
             prompt(e);
         }
-        else if (  numero> 0 && numero<= e-> num_jogadas){
+        else if (numero>= 0 && numero<= e-> num_jogadas){
             numero_jogada(e, numero);
             prompt(e);
         }
@@ -109,13 +107,14 @@ void guarda_tabuleiro(ESTADO *e, FILE *file) {
         fprintf( file, "\n");
     }
     int i=0;
-    while (i < e->num_jogadas) {;
+    while (i < e->num_jogadas -1) {;
         fprintf(file, "%d%d ", (e->jogadas[i].jogador1.coluna), (e->jogadas[i].jogador1.linha));
+        fprintf(file, "\n");
         fprintf(file, "%d%d ", (e->jogadas[i].jogador2.coluna), (e->jogadas[i].jogador2.linha));
         fprintf(file, "\n");
         i++;
     }
-    if(i== e->num_jogadas && e->jogador_atual==2){
+    if(i== e->num_jogadas -1 && e->jogador_atual==2){
         fprintf(file, "%d%d ", (e->jogadas[i].jogador1.coluna), (e->jogadas[i].jogador1.linha));
         fprintf(file, "\n");
     }
@@ -143,13 +142,14 @@ void le_Tabuleiro(ESTADO *e, FILE *file) {
         }
         l++;
     }
-   /* int i=l;
-    for(i; i-8< numjog ; i--){
-        e->jogadas[numjog].jogador2.coluna= NULL;
-        e->jogadas[numjog].jogador2.linha= NULL;
-        e->jogadas[numjog].jogador1.coluna= NULL;
-        e->jogadas[numjog].jogador1.linha= NULL;
-    }*/
+   /*if(e->jogador_atual==2){
+       changePlayer(e);
+       e->num_jogadas= l-7;
+   }
+   else if((l-7)%2==0 && e->jogador_atual==1){
+           changePlayer(e);
+           e->num_jogadas= l-8;
+       }*/
 }
 
 void guarda_jogada(ESTADO *e, COORDENADA c) {
@@ -185,6 +185,8 @@ void numero_jogada(ESTADO *e, int numero){
 
     if(numero==0) {
         e->tab[3][4] = BRANCA;
+        e->ultima_jogada.coluna = 4;
+        e->ultima_jogada.linha = 3;
         for (; i < cvazias - 1; i++) {
             e->tab[7 - e->jogadas[i].jogador1.linha][e->jogadas[i].jogador1.coluna] = VAZIO;
             e->tab[7 - e->jogadas[i].jogador2.linha][e->jogadas[i].jogador2.coluna] = VAZIO;
@@ -214,41 +216,4 @@ void numero_jogada(ESTADO *e, int numero){
         changePlayer(e);
     }
     e->num_jogadas= numero +1;
-}
-
-
-/*
- * if (sscanf(linha, "pos %d", &numero))
- * sscanf(linha, "%s");
-char* com = strtok(linha, "&s");
-if(strcmp(com, "Q")==0){
-   printf("Sair do Jogo!");
-   return 0;
-}
-else if(strcmp(com, "ler") == 0) {
-   FILE * file;
-   file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r");
-   le_Tabuleiro(e, file);
-   com = strtok(NULL, " ");
-   printf("Faz leitura do ficheiro %s", com);
-}
-else if(strcmp(com, "gr") == 0) {
-   FILE * file;
-   file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "w");
-   guarda_tabuleiro(e, file);
-   com = strtok(NULL, " ");
-   printf("Grava no ficheiro %s", com);
-}*/
-
-int transfChar(char c){
-    int num;
-    if(c=='0') num= 0;
-    if(c=='1') num= 1;
-    if(c=='2') num= 2;
-    if(c=='3') num= 3;
-    if(c=='4') num= 4;
-    if(c=='5') num= 5;
-    if(c=='6') num= 6;
-    if(c=='7') num= 7;
-    return num;
 }
