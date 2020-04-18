@@ -15,6 +15,8 @@ string.h
 -
 stdlib.h
 -
+time.h
+-
 Camada de Dados.h
 C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
 Interface.h
@@ -29,10 +31,18 @@ stdlib.h
 -
 Logica.h
 C:/Users/franc/CLionProjects/LI2/Logica.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+Camada de Dados.h
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
 
 C:/Users/franc/CLionProjects/LI2/Logica.h
 Camada de Dados.h
 C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
 Interface.h
 C:/Users/franc/CLionProjects/LI2/Interface.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
 

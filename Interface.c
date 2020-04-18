@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#define BUF_SIZE 1024
+#include <time.h>
 #include "Camada de Dados.h"
 #include "Interface.h"
+#define BUF_SIZE 1024
 
 void mostrar_tabuleiro(ESTADO *e) {
     int h=8;
@@ -28,6 +29,41 @@ int interpretador(ESTADO *e) {
     int numero;
     if (fgets(linha, BUF_SIZE, stdin) == NULL)
         return 0;
+    if (sscanf(linha, "jog %s")){
+        printf("PC vs Player\n");
+        ESTADO *e= inicializar_estado();
+        COORDENADA coord= e-> ultima_jogada;
+        infoDoJogo(e);
+        mostrar_tabuleiro(e);
+        while (jogoAcabou(e, coord) != 1){
+            if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
+            if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+                COORDENADA coord = {*col - 'a', *lin - '1'};
+                if (jogadaValida(e, coord) == 0) mostrar_tabuleiro(e);
+                else {
+                    infoDoJogo(e);
+                    jogar(e, coord);
+                    mostrar_tabuleiro(e);
+                    LISTA l= jogadasVal(e);
+                    if(jogoAcabou(e, coord)== 1) return EXIT_SUCCESS;
+                    else {
+                    srand(time(NULL));
+                    coord= jogAleatoria(l, 1+ (rand() % numElementos(l)));
+                    while(jogadaValidaAux(e, coord) == 0){
+                        int aux= 1+ (rand() % numElementos(l));
+                        coord= jogAleatoria(l, aux);
+                    }
+                    jogar(e, coord);
+                    infoDoJogo(e);
+                    mostrar_tabuleiro(e);
+                }
+                }
+                }
+            }
+        return EXIT_SUCCESS;
+        }
+
+
     if (sscanf(linha, "ler %s")){
         FILE * file;
         file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r");
@@ -66,7 +102,6 @@ int interpretador(ESTADO *e) {
     else if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         if (jogadaValida(e, coord) == 0) {
-            putchar('\n');
            prompt(e);
         } else {
             guarda_jogada(e, coord);
@@ -81,16 +116,19 @@ int interpretador(ESTADO *e) {
     }
 
     else {
-        printf("Jogada fora das dimensoes do tabuleiro. Jogue de novo\n");
-       prompt(e);
-    }
+      printf("Jogada fora das dimensoes do tabuleiro. Jogue de novo\n");
+      prompt(e);
+   }
 
     return 1;
 }
 
+void infoDoJogo(ESTADO *e){
+    printf("Jogador a Jogar:%d     Numero da Jogada:%d     Jogada Atual:%c%d\n", e-> jogador_atual, e->num_jogadas, colunaAnterior(e), linhaAnterior(e));
+}
 
 void prompt(ESTADO *e){
-    printf("Jogador a Jogar:%d     Numero da Jogada:%d     Jogada Atual:%c%d\n", e-> jogador_atual, e->num_jogadas, colunaAnterior(e), linhaAnterior(e));
+    infoDoJogo(e);
     mostrar_tabuleiro(e);
     interpretador(e);
 }
@@ -106,16 +144,18 @@ void guarda_tabuleiro(ESTADO *e, FILE *file) {
         }
         fprintf( file, "\n");
     }
-    int i=0;
-    while (i < e->num_jogadas -1) {;
-        fprintf(file, "%d%d ", (e->jogadas[i].jogador1.coluna), (e->jogadas[i].jogador1.linha));
+    fprintf( file, "\n");
+    int i=0, j= 1;
+    while (i < e->num_jogadas -1) {
+        fprintf(file, "%d: ", j);
+        fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador1.coluna), linhaaa(e->jogadas[i].jogador1.linha));
+        fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador2.coluna), linhaaa(e->jogadas[i].jogador2.linha));
         fprintf(file, "\n");
-        fprintf(file, "%d%d ", (e->jogadas[i].jogador2.coluna), (e->jogadas[i].jogador2.linha));
-        fprintf(file, "\n");
-        i++;
+        i++, j++;
     }
     if(i== e->num_jogadas -1 && e->jogador_atual==2){
-        fprintf(file, "%d%d ", (e->jogadas[i].jogador1.coluna), (e->jogadas[i].jogador1.linha));
+        fprintf(file, "%d: ", j);
+        fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador1.coluna), linhaaa(e->jogadas[i].jogador1.linha));
         fprintf(file, "\n");
     }
     fflush(file);
@@ -216,4 +256,12 @@ void numero_jogada(ESTADO *e, int numero){
         changePlayer(e);
     }
     e->num_jogadas= numero +1;
+}
+
+
+COORDENADA jogAleatoria(LISTA L, int num){
+    for(; num!= 1; num--){
+        L= L-> proxCoord;
+    }
+    return L->coord;
 }

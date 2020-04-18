@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/franc/CLionProjects/LI2/Camada de Dados.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj"
   "C:/Users/franc/CLionProjects/LI2/Interface.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj"
+  "C:/Users/franc/CLionProjects/LI2/ListasLigadas.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj"
   "C:/Users/franc/CLionProjects/LI2/Logica.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj"
   "C:/Users/franc/CLionProjects/LI2/main.c" "C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj"
   )

@@ -176,6 +176,33 @@ Interface.c.s:
 	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/Interface.c.s
 .PHONY : Interface.c.s
 
+ListasLigadas.obj: ListasLigadas.c.obj
+
+.PHONY : ListasLigadas.obj
+
+# target to build an object file
+ListasLigadas.c.obj:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj
+.PHONY : ListasLigadas.c.obj
+
+ListasLigadas.i: ListasLigadas.c.i
+
+.PHONY : ListasLigadas.i
+
+# target to preprocess a source file
+ListasLigadas.c.i:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.i
+.PHONY : ListasLigadas.c.i
+
+ListasLigadas.s: ListasLigadas.c.s
+
+.PHONY : ListasLigadas.s
+
+# target to generate assembly for a file
+ListasLigadas.c.s:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.s
+.PHONY : ListasLigadas.c.s
+
 Logica.obj: Logica.c.obj
 
 .PHONY : Logica.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... Interface.obj
 	@echo ... Interface.i
 	@echo ... Interface.s
+	@echo ... ListasLigadas.obj
+	@echo ... ListasLigadas.i
+	@echo ... ListasLigadas.s
 	@echo ... Logica.obj
 	@echo ... Logica.i
 	@echo ... Logica.s
