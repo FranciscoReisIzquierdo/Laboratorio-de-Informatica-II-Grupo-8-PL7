@@ -25,8 +25,7 @@ LISTA insere_cabeca(LISTA L, COORDENADA coord){
 }
 
 void *devolve_cabeca(LISTA L){
-    if(L == NULL) return NULL;
-    else return &(L-> coord);
+    if(L != NULL) L-> proxCoord= NULL;
 }
 
 LISTA proximo(LISTA L){
@@ -37,8 +36,11 @@ LISTA proximo(LISTA L){
 
 LISTA remove_cabeca(LISTA L){
     if(L== NULL) return EXIT_SUCCESS;
-    L= L->proxCoord;
-    //free(&(L->coord));
+    else{
+        LISTA Aux= L;
+        L= L-> proxCoord;
+        free(Aux);
+    }
     return L;
 }
 
