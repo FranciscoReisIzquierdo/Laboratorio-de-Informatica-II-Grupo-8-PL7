@@ -26,101 +26,110 @@ void mostrar_tabuleiro(ESTADO *e) {
 int interpretador(ESTADO *e) {
     char linha[BUF_SIZE];
     char col[2], lin[2];
+    char comando[BUF_SIZE];
     int numero;
-    if (fgets(linha, BUF_SIZE, stdin) == NULL)
-        return 0;
-    if (sscanf(linha, "jog %s")){
-        printf("PC vs Player\n");
-        ESTADO *e= inicializar_estado();
-        COORDENADA coord= e-> ultima_jogada;
-        infoDoJogo(e);
-        mostrar_tabuleiro(e);
-        while (jogoAcabou(e, coord) != 1){
-            if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
-            if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
-                COORDENADA coord = {*col - 'a', *lin - '1'};
-                if (jogadaValida(e, coord) == 0) mostrar_tabuleiro(e);
-                else {
-                    infoDoJogo(e);
-                    jogar(e, coord);
-                    mostrar_tabuleiro(e);
-                    LISTA l= jogadasVal(e);
-                    if(jogoAcabou(e, coord)== 1) return EXIT_SUCCESS;
-                    else {
-                    srand(time(NULL));
-                    coord= jogAleatoria(l, 1+ (rand() % numElementos(l)));
-                    while(jogadaValidaAux(e, coord) == 0){
-                        int aux= 1+ (rand() % numElementos(l));
-                        coord= jogAleatoria(l, aux);
-                    }
-                    jogar(e, coord);
-                    infoDoJogo(e);
-                    mostrar_tabuleiro(e);
-                }
-                }
-                }
-            }
-        return EXIT_SUCCESS;
-        }
-
-
-    if (sscanf(linha, "ler %s")){
-        FILE * file;
-        file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r");
-        le_Tabuleiro(e, file);
-        prompt(e);
-    }
-    if (sscanf(linha, "movs %s")){
-        imprime_lista_jogadas(e);
-        prompt(e);
-    }
-    if (sscanf(linha, "pos %d", &numero)) {
-        if (e-> jogador_atual== 1 && e->jogadas[numero].jogador1.linha== 0 && e->jogadas[numero].jogador1.coluna== 0 && e->jogadas[numero].jogador2.linha== 0 && e->jogadas[numero].jogador2.coluna== 0){
-            printf("Valor superior ao numero de jogadas efectuadas\n");
-            prompt(e);
-        }
-        else if (e-> jogador_atual== 2 && e->jogadas[numero].jogador1.linha== 0 && e->jogadas[numero].jogador1.coluna== 0){
-            printf("Valor superior ao numero de jogadas efectuadas\n");
-            prompt(e);
-        }
-        if (numero > e->num_jogadas) {
-            printf("Valor superior ao numero de jogadas efectuadas\n");
-            prompt(e);
-        }
-        else if (numero>= 0 && numero<= e-> num_jogadas){
-            numero_jogada(e, numero);
-            prompt(e);
-        }
-    }
-    if (sscanf(linha, "gr %s")){
-        FILE * file;
-        file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "w");
-        guarda_tabuleiro(e, file);
-        prompt(e);
-    }
-    if (sscanf(linha, "Q %s")) return 0;
-    else if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
-        COORDENADA coord = {*col - 'a', *lin - '1'};
-        if (jogadaValida(e, coord) == 0) {
-           prompt(e);
-        } else {
-            guarda_jogada(e, coord);
-            jogar(e, coord);
-
-            if (jogoAcabou(e, coord) == 1){
-                mostrar_tabuleiro(e);
-                return 0;
-            }
-            prompt(e);
-        }
-    }
-
+    if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
     else {
-      printf("Jogada fora das dimensoes do tabuleiro. Jogue de novo\n");
-      prompt(e);
-   }
+      /*  if (sscanf(linha, "jog %s")){
+            printf("PC vs Player\n");
+            ESTADO *e= inicializar_estado();
+            COORDENADA coord= e-> ultima_jogada;
+            infoDoJogo(e);
+            mostrar_tabuleiro(e);
+            while (jogoAcabou(e) != 1){
+                if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
+                if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+                    COORDENADA coord = {*col - 'a', *lin - '1'};
+                    if (jogadaValida(e, coord) == 0) mostrar_tabuleiro(e);
+                    else {
+                        infoDoJogo(e);
+                        jogar(e, coord);
+                        mostrar_tabuleiro(e);
+                        LISTA l= jogadasVal(e);
+                        if(jogoAcabou(e)== 1) return EXIT_SUCCESS;
+                        else {
+                            srand(time(NULL));
+                            coord= jogAleatoria(l, 1+ (rand() % numElementos(l)));
+                            while(jogadaValidaAux(e, coord) == 0){
+                                int aux= 1+ (rand() % numElementos(l));
+                                coord= jogAleatoria(l, aux);
+                            }
+                            jogar(e, coord);
+                            infoDoJogo(e);
+                            mostrar_tabuleiro(e);
+                        }
+                    }
+                }
+            }
+            return EXIT_SUCCESS;
+        }
+*/
+        if (sscanf(linha, "%s", comando) == 1) {
+            if (strlen(comando) >= 1 && strlen(comando) <= 4) {
+                if (strcmp(comando, "jog") == 0) {  //Comando jog (Bot)
+                    printf("Jogada efectuada pelo bot\n");
+                    LISTA l = brancasVizinhas(e);
+                    void *coord = l -> coord;
+                    COORDENADA c= *(( COORDENADA *) coord);
+                    guarda_jogada(e, c);  jogar(e, c);   //guarda a jogada e joga
+                    if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
+                        mostrar_tabuleiro(e);  return 0;
+                    }
+                    else prompt(e);
+                }
+                if (strcmp(comando, "gr") == 0) {  //Comando gr
+                    FILE *file;
+                    file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "w");
+                    guarda_tabuleiro(e, file); prompt(e);
+                }
+                if (strcmp(comando, "ler") == 0) {  //Comando ler
+                    FILE *file;
+                    file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r");
+                    le_Tabuleiro(e, file);  prompt(e);
+                }
+                if (strcmp(comando, "movs") == 0) {  //Comando movs
+                    imprime_lista_jogadas(e);
+                    prompt(e);
+                }
+                if (strcmp(comando, "Q") == 0) return 0;  //Comando Q
+            }
+        }
 
-    return 1;
+        if (sscanf(linha, "%s %d", comando, &numero) == 2) {
+            if (strlen(comando) == 3 && strcmp(comando, "pos") == 0) {
+                if (e->jogador_atual == 1 && e->jogadas[numero].jogador1.linha == 0 && e->jogadas[numero].jogador1.coluna == 0 && e->jogadas[numero].jogador2.linha == 0 && e->jogadas[numero].jogador2.coluna == 0) {
+                    printf("Valor superior ao numero de jogadas efectuadas\n");
+                    prompt(e);
+                }
+                else if (e->jogador_atual == 2 && e->jogadas[numero].jogador1.linha == 0 && e->jogadas[numero].jogador1.coluna == 0) {
+                    printf("Valor superior ao numero de jogadas efectuadas\n");
+                    prompt(e);
+                }
+                if (numero > e->num_jogadas) {
+                    printf("Valor superior ao numero de jogadas efectuadas\n");
+                    prompt(e);
+                } else if (numero >= 0 && numero <= e->num_jogadas) {
+                    numero_jogada(e, numero);
+                    prompt(e);
+                }
+            }
+        }
+        else if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+            COORDENADA coord = {*col - 'a', *lin - '1'};
+            if (jogadaValida(e, coord) == 0) prompt(e);
+            else {
+                guarda_jogada(e, coord);  jogar(e, coord);   //guarda a jogada e joga
+            if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
+                mostrar_tabuleiro(e);  return 0;
+            }
+            prompt(e);
+        }
+    }
+        else {
+            printf("Jogada fora das dimensoes do tabuleiro. Jogue de novo\n");  prompt(e);
+        }
+        return 1;
+    }
 }
 
 void infoDoJogo(ESTADO *e){
@@ -258,10 +267,20 @@ void numero_jogada(ESTADO *e, int numero){
     e->num_jogadas= numero +1;
 }
 
+LISTA jogadaAleatoria(LISTA L){
+    srand(time(NULL));
+    int numJogada= 1+ (rand() % numElementos(L));
+    for(; numJogada != 1; numJogada--){
+        L= L-> proxCoord;
+    }
+    L->proxCoord= NULL;
+    return L;
+}
 
-COORDENADA jogAleatoria(LISTA L, int num){
+/*COORDENADA jogAleatoria(LISTA L, int num){
     for(; num!= 1; num--){
         L= L-> proxCoord;
     }
-    return L->coord;
+    //return (L->coord);
 }
+*/

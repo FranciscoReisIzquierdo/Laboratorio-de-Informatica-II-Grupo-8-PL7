@@ -16,6 +16,7 @@ int transfChar(char c);
 void infoDoJogo(ESTADO *e);
 COORDENADA jogAleatoria(LISTA L, int num);
 void puta(ESTADO *e);
+LISTA jogadaAleatoria(LISTA L);
 
 #ifndef PROJETOLI2_INTERFACE_H
 #define PROJETOLI2_INTERFACE_H

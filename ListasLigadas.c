@@ -7,17 +7,17 @@ LISTA criar_lista(){
     return l;
 }
 
-LISTA insere_cabeca(LISTA L, COORDENADA coord){
+LISTA insere_cabeca(LISTA L, void *valor){
     if(L== NULL){
         LISTA l= malloc(sizeof(NodoLista));
-        l->coord= coord;
+        l->coord= valor;
         l->proxCoord= NULL;
         L= l;
     }
     else {
         LISTA aux = L;
         LISTA l = malloc(sizeof(NodoLista));
-        l->coord = coord;
+        l->coord = valor;
         l->proxCoord = aux;
         L = l;
     }
@@ -58,10 +58,3 @@ int numElementos(LISTA L){
     return num;
 }
 
-void showLista(LISTA L){
-    printf("\nLista: ");
-    while(L!=NULL){
-        printf("%c%d ", colunaaa(L->coord.coluna), linhaaa(L->coord.linha) -1);
-        L= L->proxCoord;
-    }
-}

@@ -13,8 +13,14 @@
   <component name="ChangeListManager">
     <list default="true" id="adda93fc-ed6b-4016-aeeb-f7c71c6953f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interface.h" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListasLigadas.c" beforeDir="false" afterPath="$PROJECT_DIR$/ListasLigadas.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListasLigadas.h" beforeDir="false" afterPath="$PROJECT_DIR$/ListasLigadas.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +88,10 @@
       <workItem from="1586874162520" duration="82000" />
       <workItem from="1587113713868" duration="21917000" />
       <workItem from="1587209295917" duration="33886000" />
-      <workItem from="1587409978498" duration="2791000" />
+      <workItem from="1587409978498" duration="2859000" />
+      <workItem from="1587419434849" duration="1376000" />
+      <workItem from="1587466745993" duration="828000" />
+      <workItem from="1587588196981" duration="13286000" />
     </task>
     <task id="LOCAL-00001" summary="Prompt">
       <created>1584661002019</created>
@@ -147,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587251711938</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Guião 9-&gt; Funções das listas ligadas resolvidas!">
+      <created>1587414914537</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1587414914537</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,33 +178,34 @@
     <MESSAGE value="Guião 8-&gt; Finalizado (Atualizado)" />
     <MESSAGE value="Guião 9-&gt; Problemas em guardar na lista ligada os movimentos possíveis;" />
     <MESSAGE value="Guião 9-&gt; Problemas em guardar na lista ligada os movimentos possíveis;   &#10;Guião 8-&gt; Problemas com o comando pos;&#10;Guião 7-&gt; Falta ler a lista de movimentos e posteriormente atualizá-la quando invocado o comando &quot;ler&quot;;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Guião 9-&gt; Problemas em guardar na lista ligada os movimentos possíveis;   &#10;Guião 8-&gt; Problemas com o comando pos;&#10;Guião 7-&gt; Falta ler a lista de movimentos e posteriormente atualizá-la quando invocado o comando &quot;ler&quot;;" />
+    <MESSAGE value="Guião 9-&gt; Funções das listas ligadas resolvidas!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Guião 9-&gt; Funções das listas ligadas resolvidas!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="321" y="0" key="CommitChangelistDialog2" timestamp="1587251708853">
+    <state x="276" y="0" key="CommitChangelistDialog2" timestamp="1587414911986">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="321" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587251708853" />
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom" timestamp="1587410547038">
+    <state x="276" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587414911986" />
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom" timestamp="1587609413310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585309531566" />
-    <state width="1323" height="320" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587410547038" />
-    <state width="1323" height="320" key="GridCell.Tab.0.center" timestamp="1587410547038">
+    <state width="1323" height="363" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587609413310" />
+    <state width="1323" height="363" key="GridCell.Tab.0.center" timestamp="1587609413310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="320" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587410547038" />
-    <state width="1323" height="320" key="GridCell.Tab.0.left" timestamp="1587410547037">
+    <state width="1323" height="363" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587609413310" />
+    <state width="1323" height="363" key="GridCell.Tab.0.left" timestamp="1587609413310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="320" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587410547037" />
-    <state width="1323" height="320" key="GridCell.Tab.0.right" timestamp="1587410547038">
+    <state width="1323" height="363" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587609413310" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right" timestamp="1587609413310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="320" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587410547038" />
+    <state width="1323" height="363" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587609413310" />
     <state width="1237" height="203" key="GridCell.Tab.1.bottom" timestamp="1585345630230">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -209,14 +226,18 @@
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1585345630230" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1587251718084">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1587414916664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587251718084" />
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587409978215">
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587414916664" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587588204146">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587409978215" />
+    <state x="391" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587588204146" />
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587598664241">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="494" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1587598664241" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1587224793811">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

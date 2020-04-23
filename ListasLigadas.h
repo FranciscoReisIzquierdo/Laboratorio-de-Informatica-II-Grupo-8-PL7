@@ -3,14 +3,14 @@
 #include "Camada de Dados.h"
 
 typedef struct LISTALIG{
-        COORDENADA coord;
+    void *coord;
     struct LISTALIG *proxCoord;
 } NodoLista, *LISTA;
 
 // Cria uma lista vazia
 LISTA criar_lista();
 // Insere um valor na cabeça da lista
-LISTA insere_cabeca(LISTA L, COORDENADA coord);
+LISTA insere_cabeca(LISTA L, void *coord);
 // Devolve a cabeça da lista
 void *devolve_cabeca(LISTA L);
 // Devolve a cauda da lista
