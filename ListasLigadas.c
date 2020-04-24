@@ -1,6 +1,5 @@
 #include "ListasLigadas.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 LISTA criar_lista(){
     LISTA l= NULL;
@@ -10,14 +9,14 @@ LISTA criar_lista(){
 LISTA insere_cabeca(LISTA L, void *valor){
     if(L== NULL){
         LISTA l= malloc(sizeof(NodoLista));
-        l->coord= valor;
+        l->valor= valor;
         l->proxCoord= NULL;
         L= l;
     }
     else {
         LISTA aux = L;
         LISTA l = malloc(sizeof(NodoLista));
-        l->coord = valor;
+        l->valor = valor;
         l->proxCoord = aux;
         L = l;
     }
@@ -25,7 +24,7 @@ LISTA insere_cabeca(LISTA L, void *valor){
 }
 
 void *devolve_cabeca(LISTA L){
-    if(L != NULL) L-> proxCoord= NULL;
+    if(L != NULL) return L-> valor;
 }
 
 LISTA proximo(LISTA L){
@@ -39,7 +38,8 @@ LISTA remove_cabeca(LISTA L){
     else{
         LISTA Aux= L;
         L= L-> proxCoord;
-        free(Aux);
+        free(Aux-> valor);
+        free(Aux-> proxCoord);
     }
     return L;
 }
@@ -58,13 +58,4 @@ int numElementos(LISTA L){
     return num;
 }
 
-void showLista(LISTA L){
-    while(lista_esta_vazia(L) != NULL){
-        void *aux; aux = L-> coord;
-        COORDENADA jogadaAleatoria= *((COORDENADA *) aux);
-        printf("%d%d  ", jogadaAleatoria.coluna, jogadaAleatoria.linha);
-        L= L-> proxCoord;
-    }
-
-}
 

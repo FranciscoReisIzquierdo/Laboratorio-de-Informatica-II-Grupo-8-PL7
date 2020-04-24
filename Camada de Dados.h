@@ -29,5 +29,7 @@ int linhaAnterior(ESTADO *e);
 char colunaAnterior(ESTADO *e);
 int linhaaa(int line);
 char colunaaa(int column);
+int jogAtual(ESTADO *e);
+int numJogada(ESTADO*e);
 
 #endif //PROJETOLI2_CAMADA_DE_DADOS_H

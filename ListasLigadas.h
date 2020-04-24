@@ -3,7 +3,7 @@
 #include "Camada de Dados.h"
 
 typedef struct LISTALIG{
-    void *coord;
+    void *valor;
     struct LISTALIG *proxCoord;
 } NodoLista, *LISTA;
 
@@ -20,6 +20,6 @@ LISTA remove_cabeca(LISTA L);
 // Devolve verdareiro se a lista é vazia
 int lista_esta_vazia(LISTA L);
 int numElementos(LISTA L);
-void showLista(LISTA L);
+
 
 #endif //PROJETOLI2_LISTASLIGADAS_H
