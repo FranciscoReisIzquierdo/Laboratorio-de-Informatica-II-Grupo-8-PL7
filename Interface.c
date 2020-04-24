@@ -28,8 +28,10 @@ int interpretador(ESTADO *e) {
     char col[2], lin[2];
     char comando[BUF_SIZE];
     int numero;
-    if (fgets(linha, BUF_SIZE, stdin) == NULL) return 0;
+    fgets(linha, BUF_SIZE, stdin);
+    if (linha == NULL) return 0;
     else {
+        char *command = strtok(linha, "\n");
       /*  if (sscanf(linha, "jog %s")){
             printf("PC vs Player\n");
             ESTADO *e= inicializar_estado();
@@ -64,38 +66,36 @@ int interpretador(ESTADO *e) {
             return EXIT_SUCCESS;
         }
 */
-        if (sscanf(linha, "%s", comando) == 1) {
-            if (strlen(comando) >= 1 && strlen(comando) <= 4) {
-                if (strcmp(comando, "jog") == 0) {  //Comando jog (Bot)
-                    printf("Jogada efectuada pelo bot\n");
-                    LISTA l = brancasVizinhas(e);
-                    void *coord = l -> coord;
-                    COORDENADA c= *(( COORDENADA *) coord);
-                    guarda_jogada(e, c);  jogar(e, c);   //guarda a jogada e joga
-                    if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
-                        mostrar_tabuleiro(e);  return 0;
-                    }
-                    else prompt(e);
-                }
-                if (strcmp(comando, "gr") == 0) {  //Comando gr
-                    FILE *file;
-                    file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "w");
-                    guarda_tabuleiro(e, file); prompt(e);
-                }
-                if (strcmp(comando, "ler") == 0) {  //Comando ler
-                    FILE *file;
-                    file = fopen("C:\\Users\\franc\\CLionProjects\\ProjetoLI2\\Tabuleiro.txt", "r");
-                    le_Tabuleiro(e, file);  prompt(e);
-                }
-                if (strcmp(comando, "movs") == 0) {  //Comando movs
+      char *cmd= strtok(command, " ");
+      if (strcmp(cmd, "jog") == 0) {  //Comando jog (Bot)
+          printf("Jogada efectuada pelo bot\n");
+          guarda_jogada(e, jogadaAleatoria(e));;
+          jogar(e, jogadaAleatoria(e));  //guarda a jogada e joga
+          if (jogoAcabou(e) == 1) {     //verifica se o jogo acabou
+              mostrar_tabuleiro(e);
+                    exit(0);
+                } else prompt(e);
+            }
+            if (strcmp(cmd, "movs") == 0) {  //Comando movs
                     imprime_lista_jogadas(e);
                     prompt(e);
-                }
-                if (strcmp(comando, "Q") == 0) return 0;  //Comando Q
             }
-        }
+            if (strcmp(cmd, "Q") == 0){ exit(0);}  //Comando Q
 
-        if (sscanf(linha, "%s %d", comando, &numero) == 2) {
+            if (strcmp(cmd, "gr") == 0) {  //Comando gr
+                    FILE *file;
+                    char *nome= strtok(NULL, " ");
+                    file = fopen(nome, "w+");
+                    guarda_tabuleiro(e, file); prompt(e);
+                }
+                if (strcmp(cmd, "ler") == 0) {  //Comando ler
+                    FILE *file;
+                    char *nome= strtok(NULL, " ");
+                    file = fopen(nome, "r");
+                    le_Tabuleiro(e, file);  prompt(e);
+                }
+
+        if (sscanf(command, "%s %d", comando, &numero) == 2) {
             if (strlen(comando) == 3 && strcmp(comando, "pos") == 0) {
                 if (e->jogador_atual == 1 && e->jogadas[numero].jogador1.linha == 0 && e->jogadas[numero].jogador1.coluna == 0 && e->jogadas[numero].jogador2.linha == 0 && e->jogadas[numero].jogador2.coluna == 0) {
                     printf("Valor superior ao numero de jogadas efectuadas\n");
@@ -114,13 +114,13 @@ int interpretador(ESTADO *e) {
                 }
             }
         }
-        else if (strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
+        else if (strlen(command) == 2 && sscanf(command, "%[a-h]%[1-8]", col, lin) == 2) {
             COORDENADA coord = {*col - 'a', *lin - '1'};
             if (jogadaValida(e, coord) == 0) prompt(e);
             else {
                 guarda_jogada(e, coord);  jogar(e, coord);   //guarda a jogada e joga
             if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
-                mostrar_tabuleiro(e);  return 0;
+                mostrar_tabuleiro(e);  exit(0) ;
             }
             prompt(e);
         }
@@ -156,14 +156,14 @@ void guarda_tabuleiro(ESTADO *e, FILE *file) {
     fprintf( file, "\n");
     int i=0, j= 1;
     while (i < e->num_jogadas -1) {
-        fprintf(file, "%d: ", j);
+        fprintf(file, "0%d: ", j);
         fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador1.coluna), linhaaa(e->jogadas[i].jogador1.linha));
         fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador2.coluna), linhaaa(e->jogadas[i].jogador2.linha));
         fprintf(file, "\n");
         i++, j++;
     }
     if(i== e->num_jogadas -1 && e->jogador_atual==2){
-        fprintf(file, "%d: ", j);
+        fprintf(file, "0%d: ", j);
         fprintf(file, "%c%d ", colunaaa(e->jogadas[i].jogador1.coluna), linhaaa(e->jogadas[i].jogador1.linha));
         fprintf(file, "\n");
     }
@@ -172,24 +172,43 @@ void guarda_tabuleiro(ESTADO *e, FILE *file) {
 
 void le_Tabuleiro(ESTADO *e, FILE *file) {
     char buffer[BUF_SIZE];
+    char *colon = ":";
+    char *sapce = " ";
+    int i=0;
     int l = 0, numjog= e-> num_jogadas, coluna, linha;
     while (fgets(buffer, BUF_SIZE, file) != NULL) {
-        for (int c = 0; c < 8; c++) {
-            if (buffer[c] == '*') {
-                e->tab[l][c] = BRANCA;
-                coluna = c;
-                linha = l;
+        if(l<8) {
+            for (int c = 0; c < 8; c++) {
+                if (buffer[c] == '*') {
+                    e->tab[l][c] = BRANCA;
+                    coluna = c;
+                    linha = l;
+                }
+                if (buffer[c] == '#') {
+                    e->tab[l][c] = PRETA;
+                }
+                if (buffer[c] == '.') e->tab[l][c] = VAZIO;
+                if (buffer[c] == '1') e->tab[l][c] = POS1;
+                if (buffer[c] == '2') e->tab[l][c] = POS2;
+                e->ultima_jogada.coluna = coluna;
+                e->ultima_jogada.linha = linha;
             }
-            if (buffer[c] == '#') {
-                e->tab[l][c] = PRETA;
+        }
+        if(l>8) {
+            strtok(buffer, ":"); //01: | a1 b1
+            char *sep2 = strtok(NULL, ":");// a1 b1
+            char *jog1 = strtok(sep2, " "); // a1 | b1
+            COORDENADA c1 = {jog1[0]- 'a', '5'- jog1[1]}; //////////////////////
+            e->jogadas[i].jogador1= c1;
+            char *jog2 = strtok(NULL, " "); //b1
+            if(jog2!=NULL && strlen(jog2)==2){
+                COORDENADA c2 =  {jog2[0]- 'a', '3'-jog2[1]};
+                e->jogadas[i].jogador2= c2;
             }
-            if (buffer[c] == '.') e->tab[l][c] = VAZIO;
-            if (buffer[c] == '1') e->tab[l][c] = POS1;
-            if (buffer[c] == '2') e->tab[l][c] = POS2;
-            e->ultima_jogada.coluna = coluna;
-            e->ultima_jogada.linha = linha;
+            i++;
         }
         l++;
+
     }
    /*if(e->jogador_atual==2){
        changePlayer(e);
@@ -266,7 +285,7 @@ void numero_jogada(ESTADO *e, int numero){
     }
     e->num_jogadas= numero +1;
 }
-
+/*
 LISTA jogadaAleatoria(LISTA L){
     srand(time(NULL));
     int numJogada= 1+ (rand() % numElementos(L));

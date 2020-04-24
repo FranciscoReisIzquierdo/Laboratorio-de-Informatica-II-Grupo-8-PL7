@@ -58,3 +58,13 @@ int numElementos(LISTA L){
     return num;
 }
 
+void showLista(LISTA L){
+    while(lista_esta_vazia(L) != NULL){
+        void *aux; aux = L-> coord;
+        COORDENADA jogadaAleatoria= *((COORDENADA *) aux);
+        printf("%d%d  ", jogadaAleatoria.coluna, jogadaAleatoria.linha);
+        L= L-> proxCoord;
+    }
+
+}
+

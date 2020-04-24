@@ -1,3 +1,4 @@
+#include <time.h>
 #include "Logica.h"
 #include "Camada de Dados.h"
 #include "ListasLigadas.h"
@@ -51,8 +52,8 @@ int jogoAcabou(ESTADO *e){
     else if (e-> tab[0][7]== BRANCA){
         printf("Jogador 2 venceu o jogo! Parabens!\n");  return 1;
     }
-    for(int line= branca.linha -1; line!= branca.linha +2; line++){
-        for(int column= branca.coluna -1; column!= branca.coluna +2; column++){
+    for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +2; line++) {
+        for (int column = e->ultima_jogada.coluna -1; column != e->ultima_jogada.coluna + 2; column++) {
             if(e-> tab[line][column] == PRETA) count++;
         }
     }
@@ -122,20 +123,126 @@ int jogoAcabou(ESTADO *e){
     return L;
 }*/
 
-LISTA brancasVizinhas(ESTADO *e){
-    COORDENADA a; a.linha= 2; a.coluna= 2;
-    COORDENADA b; b.linha= 3; b.coluna= 3;
-    COORDENADA branca= e-> ultima_jogada; LISTA VizinhasVazias= criar_lista();
-
+COORDENADA jogadaAleatoria(ESTADO *e) {
+    LISTA vizinhasVazias = criar_lista();
+    COORDENADA *casaVazia;
     /*for(int line= branca.linha -1; line!= branca.linha +2; line++){
         for(int column= branca.coluna -1; column!= branca.coluna +2; column++){
-            branca.linha= line;  branca.coluna= column;
-            if(e-> tab[line][column] == VAZIO) insere_cabeca(VizinhasVazias, &branca);
+            //branca.linha= line;  branca.coluna= column;
+            if(e-> tab[line][column] == PRETA) num++; //insere_cabeca(VizinhasVazias, &branca);
         }
     }*/
-    insere_cabeca(VizinhasVazias, &a);
-    insere_cabeca(VizinhasVazias, &b);
-    return VizinhasVazias;
+/*
+    COORDENADA pos1;
+    pos1.linha = e->ultima_jogada.linha - 1; pos1.coluna = e->ultima_jogada.coluna - 1;
+    COORDENADA pos2;
+    pos2.linha = e->ultima_jogada.linha - 1; pos2.coluna = e->ultima_jogada.coluna;
+    COORDENADA pos3;
+    pos3.linha = e->ultima_jogada.linha - 1; pos3.coluna = e->ultima_jogada.coluna + 1;
+    COORDENADA pos4;
+    pos4.linha = e->ultima_jogada.linha; pos4.coluna = e->ultima_jogada.coluna - 1;
+    COORDENADA pos5;
+    pos5.linha = e->ultima_jogada.linha; pos5.coluna = e->ultima_jogada.coluna + 1;
+    COORDENADA pos6;
+    pos6.linha = e->ultima_jogada.linha + 1; pos6.coluna = e->ultima_jogada.coluna - 1;
+    COORDENADA pos7;
+    pos7.linha = e->ultima_jogada.linha + 1; pos7.coluna = e->ultima_jogada.coluna;
+    COORDENADA pos8;
+    pos8.linha = e->ultima_jogada.linha + 1; pos8.coluna = e->ultima_jogada.coluna + 1;
+
+    int line = e->ultima_jogada.linha - 1;
+    int coluna = e->ultima_jogada.coluna - 1;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos1.coluna, pos1.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos1);
+    }
+    coluna++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos2.coluna, pos2.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos2);
+    }
+    coluna++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos3.coluna, pos3.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos3);
+    }
+    coluna = e->ultima_jogada.coluna - 1;
+    line++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos4.coluna, pos4.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos4);
+    }
+    coluna = coluna + 2;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos5.coluna, pos5.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos5);
+    }
+    coluna = e->ultima_jogada.coluna - 1;
+    line++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos6.coluna, pos6.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos6);
+    }
+    coluna++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos7.coluna, pos7.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos7);
+    }
+    coluna++;
+
+    if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) {
+        printf("CASA VAZIA: %d%d ", pos8.coluna, pos8.linha);  vizinhasVazias = insere_cabeca(vizinhasVazias, &pos8);
+    }
+    */
+    for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +2; line++) {
+        for (int coluna = e->ultima_jogada.coluna -1; coluna != e->ultima_jogada.coluna +2; coluna++) {
+            if (e->tab[line][coluna] == VAZIO){
+                casaVazia= (COORDENADA *) malloc(sizeof(COORDENADA));
+
+                casaVazia->linha= line; casaVazia->coluna= coluna;  printf("CASA VAZIA: %d%d ", casaVazia->coluna, casaVazia->linha);
+
+                vizinhasVazias= insere_cabeca(vizinhasVazias, casaVazia);
+
+                putchar('\n');
+            }
+        }
+    }
+    srand(time(NULL));
+    int numJogada= 1+ (rand() % numElementos(vizinhasVazias));
+    for(; numJogada != 1; numJogada--){
+        vizinhasVazias= vizinhasVazias-> proxCoord;
+    }
+    vizinhasVazias->proxCoord= NULL;
+    void *aux; aux = vizinhasVazias-> coord;
+    COORDENADA jogadaAl= *((COORDENADA *) aux);
+
+    printf("%d%d\n ", jogadaAl.coluna, jogadaAl.linha++);
+    jogadaAl.linha= 7- jogadaAl.linha +1; printf("%d\n", jogadaAl.linha);
+
+    return jogadaAl;
 }
 
+
+
+//COORDENADA jogadaAleatoria(LISTA vizinhasVazias){
+
+
+/*int vazia(ESTADO *e){
+    LISTA J= brancasVizinhas(e);
+    COORDENADA a; a.linha= 2; a.coluna= 3; LISTA H= NULL;
+    COORDENADA b; b.linha= 7; b.coluna= 7; int num= 2; int tt= 1;
+    while(num!= 0) {
+        while (tt != 0) {
+            H = insere_cabeca(H, &a);
+            a=b;
+            COORDENADA *rr= &a;
+            H = insere_cabeca(H, rr);
+            tt--;
+        }
+        num--;
+    }
+    showLista(J);
+    return 0;
+}
+*/
 
