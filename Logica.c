@@ -205,3 +205,81 @@ COORDENADA jogadaAleatoria(LISTA vizinhasVazias){
 
     return jogadaAl;
 }
+
+int mcts(ESTADO *e, LISTA vizinhasVazias){
+    while(lista_esta_vazia(vizinhasVazias)) {
+        COORDENADA jogadaPossivel = *((COORDENADA *) vizinhasVazias->valor);
+        if(jogoAcabouMCTS(e, jogadaPossivel)== 8){
+            printf("Escolha a coordenada: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
+            return 0;
+        }
+        verificaErro(e,jogadaPossivel);
+        vizinhasVazias = vizinhasVazias->proxCoord;
+    }
+        /*
+        COORDENADA jogadaPossivel= *((COORDENADA *) vizinhasVazias-> valor);
+        if(jogoAcabouMCTS(e, jogadaPossivel)== 8) {
+        printf("Escolha a coordenada:%d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
+        return 0;
+        }
+        verificaErro(e, jogadaPossivel);
+        //jogadaPerdeMCTS(e, jogadaPossivel);
+        vizinhasVazias= vizinhasVazias-> proxCoord;
+        }**/
+        return 1;
+}
+
+int jogoAcabouMCTS(ESTADO *e, COORDENADA c){
+    int count= 0; e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= PRETA;
+    for(int line= c.linha -1; line!= c.linha +2; line++) {
+        for (int column = c.coluna - 1; column != c.coluna + 2; column++) {
+            if (e->tab[line][column] == PRETA)  count++;
+        }
+    }
+    e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= BRANCA;
+    return count;
+}
+/*
+int jogadaPerdeMCTS(ESTADO *e, COORDENADA c){
+    COORDENADA save= e->ultima_jogada;
+    e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= PRETA; e->ultima_jogada= c;
+
+    LISTA temporaria= vizinhasVazias(e);
+    while(lista_esta_vazia(temporaria)){
+        COORDENADA jogadaPossivel= *((COORDENADA *) temporaria-> valor);
+        if(jogoAcabouMCTS(e, jogadaPossivel)== 7) {
+            printf("Nao escolha as coordenadas:%d%d\n", c.coluna, c.linha);
+        }
+        temporaria= temporaria-> proxCoord;
+    }
+    e->tab [c.linha][c.coluna]= VAZIO;
+    e->ultima_jogada= save;
+    return 1;
+}
+
+int jogadasVazias(ESTADO *e, COORDENADA c){
+    int count= 0;
+    for(int line= c.linha -1; line!= c.linha +2; line++) {
+        for (int column = c.coluna - 1; column != c.coluna + 2; column++) {
+            if (e->tab[line][column] == PRETA)count++;
+        }
+    }
+    return count;
+}*/
+
+int verificaErro(ESTADO *e, COORDENADA temp){
+        COORDENADA save= e->ultima_jogada;
+        e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= PRETA;
+        e->tab [temp.linha][temp.coluna]= BRANCA;
+        e->ultima_jogada= temp;
+
+        LISTA temporaria= vizinhasVazias(e);
+        while(lista_esta_vazia(temporaria)){
+            COORDENADA jogadaPossivel= *((COORDENADA *) temporaria-> valor);
+            if(jogoAcabouMCTS(e, jogadaPossivel)== 8) printf("Nao escolha a coordenada: %d%d\n", temp.coluna, temp.linha);
+            temporaria= temporaria-> proxCoord;
+        }
+        e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;
+        e->ultima_jogada= save;
+        return 1;
+}

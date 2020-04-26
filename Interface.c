@@ -37,6 +37,8 @@ int interpretador(ESTADO *e) {
             exit(0);
         } else prompt(e);
     }
+    if (strcmp(cmd, "jog2") == 0) {
+    }
     if (strcmp(cmd, "movs") == 0) {  //Comando movs
         imprime_lista_jogadas(e);
         prompt(e);
@@ -59,7 +61,8 @@ int interpretador(ESTADO *e) {
     }
     if (strcmp(cmd, "pos") == 0){
         char *num = strtok(NULL, " ");
-        int numero = {num[0] - '0'};
+        int numero;
+        sscanf(num, "%d", &numero);//= {num[0] - '0'};
         comandoPos(e, numero);
         prompt(e);
         }
@@ -85,7 +88,7 @@ void infoDoJogo(ESTADO *e){
 }
 
 void prompt(ESTADO *e){
-    infoDoJogo(e);  mostrar_tabuleiro(e);  interpretador(e);
+    infoDoJogo(e);  mostrar_tabuleiro(e); mcts(e, vizinhasVazias(e)); interpretador(e);
 }
 
 void guarda_tabuleiro(ESTADO *e, FILE *file) {
@@ -135,7 +138,7 @@ void le_Tabuleiro(ESTADO *e, FILE *file) {
         if(l<8) {
             for (int c = 0; c < 8; c++) {
                 if (buffer[c] == '*') {  e->tab[l][c] = BRANCA;  coluna = c;  linha = l;  }
-                if (buffer[c] == '#')e->tab[l][c] = PRETA;
+                if (buffer[c] == '#') e->tab[l][c] = PRETA;
                 if (buffer[c] == '.') e->tab[l][c] = VAZIO;
                 if (buffer[c] == '1') e->tab[l][c] = POS1;
                 if (buffer[c] == '2') e->tab[l][c] = POS2;
