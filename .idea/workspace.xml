@@ -13,14 +13,11 @@
   <component name="ChangeListManager">
     <list default="true" id="adda93fc-ed6b-4016-aeeb-f7c71c6953f5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interface.c" beforeDir="false" afterPath="$PROJECT_DIR$/Interface.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logica.c" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logica.h" beforeDir="false" afterPath="$PROJECT_DIR$/Logica.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Interface.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/Logica.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ProjetoLI2.dir/objects.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ProjetoLI2.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +90,7 @@
       <workItem from="1587588196981" duration="64875000" />
       <workItem from="1587745568988" duration="10136000" />
       <workItem from="1587850540911" duration="1272000" />
-      <workItem from="1587897781954" duration="16661000" />
+      <workItem from="1587897781954" duration="21440000" />
     </task>
     <task id="LOCAL-00001" summary="Prompt">
       <created>1584661002019</created>
@@ -193,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587754615005</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Implementação da heurística de Monte Carlo Tree Search.">
+      <created>1587921637827</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1587921637827</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,61 +216,62 @@
     <MESSAGE value="Guião 9-&gt; Melhorias dos guiões anteriores" />
     <MESSAGE value="Melhorias dos guiões anteriores" />
     <MESSAGE value="Todos os guiões feitos e completos!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Todos os guiões feitos e completos!" />
+    <MESSAGE value="Implementação da heurística de Monte Carlo Tree Search." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementação da heurística de Monte Carlo Tree Search." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="276" y="0" key="CommitChangelistDialog2" timestamp="1587754613615">
+    <state x="276" y="0" key="CommitChangelistDialog2" timestamp="1587921634138">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="276" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587754613615" />
+    <state x="276" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587921634138" />
     <state width="424" height="466" key="DebuggerActiveHint" timestamp="1587679455720">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="424" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1587679455720" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom" timestamp="1587921548681">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom" timestamp="1587926686326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585309531566" />
-    <state width="1323" height="296" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587921548681" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center" timestamp="1587921548681">
+    <state width="1323" height="316" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587926686326" />
+    <state width="1323" height="316" key="GridCell.Tab.0.center" timestamp="1587926686325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="296" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587921548681" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left" timestamp="1587921548680">
+    <state width="1323" height="316" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587926686325" />
+    <state width="1323" height="316" key="GridCell.Tab.0.left" timestamp="1587926686325">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="296" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587921548680" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right" timestamp="1587921548681">
+    <state width="1323" height="316" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587926686325" />
+    <state width="1323" height="316" key="GridCell.Tab.0.right" timestamp="1587926686326">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="303" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585309531565" />
-    <state width="1323" height="296" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587921548681" />
-    <state width="1323" height="335" key="GridCell.Tab.1.bottom" timestamp="1587915068848">
+    <state width="1323" height="316" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587926686326" />
+    <state width="1323" height="335" key="GridCell.Tab.1.bottom" timestamp="1587923269568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
-    <state width="1323" height="335" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587915068848" />
-    <state width="1323" height="335" key="GridCell.Tab.1.center" timestamp="1587915068848">
+    <state width="1323" height="335" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587923269568" />
+    <state width="1323" height="335" key="GridCell.Tab.1.center" timestamp="1587923269567">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
-    <state width="1323" height="335" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587915068848" />
-    <state width="1323" height="335" key="GridCell.Tab.1.left" timestamp="1587915068848">
+    <state width="1323" height="335" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1587923269567" />
+    <state width="1323" height="335" key="GridCell.Tab.1.left" timestamp="1587923269567">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1585308186546" />
-    <state width="1323" height="335" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587915068848" />
-    <state width="1323" height="335" key="GridCell.Tab.1.right" timestamp="1587915068848">
+    <state width="1323" height="335" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1587923269567" />
+    <state width="1323" height="335" key="GridCell.Tab.1.right" timestamp="1587923269568">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1237" height="203" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1585308186547" />
-    <state width="1323" height="335" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587915068848" />
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1587754617343">
+    <state width="1323" height="335" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1587923269568" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2" timestamp="1587921640498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587754617343" />
+    <state x="275" y="100" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1587921640498" />
     <state x="391" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1587897781190">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -288,9 +293,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/Interface.c</url>
-          <line>62</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/Logica.c</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

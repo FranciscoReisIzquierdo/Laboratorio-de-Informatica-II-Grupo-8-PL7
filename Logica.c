@@ -17,8 +17,8 @@ int jogar(ESTADO *e, COORDENADA c) {
 }
 
 int jogadaValida(ESTADO *e, COORDENADA c) {
-    int r=1;
-    if (e-> tab [7- c.linha][c.coluna]== BRANCA) {
+    int r=1; COORDENADA ultima= e->ultima_jogada;
+    if (ultima.linha== 7- c.linha && ultima.coluna== c.coluna) {
         putchar('\n');
         printf("Jogada invalida: a jogada e igual a casa atual\n");
         r=0;
@@ -41,65 +41,27 @@ int jogoAcabou(ESTADO *e){
     if (e-> tab [7][0]== BRANCA){
         printf("Jogador 1 venceu o jogo! Parabens!\n");  return 1;
     }
-    else if (e-> tab[0][7]== BRANCA){
-        printf("Jogador 2 venceu o jogo! Parabens!\n");  return 1;
-    }
-    else if(branca.linha == 0 && branca.coluna== 0){
-        for(int line= e->ultima_jogada.linha; line!= e->ultima_jogada.linha +2; line++) {
-            for (int column = e->ultima_jogada.coluna; column != e->ultima_jogada.coluna + 2; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 3){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
-    }
-    else if(branca.linha == 7 && branca.coluna== 7){
-        for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +1; line++) {
-            for (int column = e->ultima_jogada.coluna -1; column != e->ultima_jogada.coluna +1; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 3){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
-    }
-    else if (branca.linha == 0){
-        for(int line= e->ultima_jogada.linha; line!= e->ultima_jogada.linha +2; line++) {
-            for (int column = e->ultima_jogada.coluna -1; column != e->ultima_jogada.coluna + 2; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 5){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
-    }
-    else if (branca.linha == 7){
-        for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +1; line++) {
-            for (int column = e->ultima_jogada.coluna -1; column != e->ultima_jogada.coluna + 2; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 5){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
-    }
-    else if (branca.coluna == 0){
-        for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +2; line++) {
-            for (int column = e->ultima_jogada.coluna; column != e->ultima_jogada.coluna + 2; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 5){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
-    }
-    else if (branca.coluna == 7){
-        for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +2; line++) {
-            for (int column = e->ultima_jogada.coluna -1; column != e->ultima_jogada.coluna + 1; column++) {
-                if(e-> tab[line][column] == PRETA) count++;
-                if(count== 5){  printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
-            }
-        }
+    else if (e-> tab[0][7]== BRANCA) {
+        printf("Jogador 2 venceu o jogo! Parabens!\n"); return 1;
     }
     else for(int line= e->ultima_jogada.linha -1; line!= e->ultima_jogada.linha +2; line++) {
             for (int column = e->ultima_jogada.coluna - 1; column != e->ultima_jogada.coluna + 2; column++) {
-                if (e->tab[line][column] == PRETA) count++;
-                if (count == 8) {
-                    printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1; }
+                if (e->tab[line][column] == PRETA && (line >= 0 && line < 8) && (column >= 0 && column < 8))
+                    count++;
             }
         }
-    return 0;
+    if(((branca.linha == 0 && branca.coluna== 0) || (branca.linha== 7 && branca.coluna== 7)) && count== 3){
+        printf("Jogador %d venceu o jogo! Parabens!\n", winner(e)); return 1;
+    }
+    else if((branca.linha== 0 || branca.linha== 7 || branca.coluna== 0 || branca.coluna== 7) && count== 5) {
+        printf("Jogador %d venceu o jogo! Parabens!\n", winner(e));
+        return 1;
+    }
+    else if(count== 8) {
+        printf("Jogador %d venceu o jogo! Parabens!\n", winner(e));
+        return 1;
+    }
+    else return 0;
 }
 
 LISTA vizinhasVazias(ESTADO *e) {
@@ -209,6 +171,7 @@ COORDENADA jogadaAleatoria(LISTA vizinhasVazias){
 int mcts(ESTADO *e, LISTA vizinhasVazias){
     while(lista_esta_vazia(vizinhasVazias)) {
         COORDENADA jogadaPossivel = *((COORDENADA *) vizinhasVazias->valor);
+        printf("%d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
         if(jogoAcabouMCTS(e, jogadaPossivel)== 8){
             printf("Escolha a coordenada: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
             return 0;
