@@ -38,6 +38,13 @@ int interpretador(ESTADO *e) {
         } else prompt(e);
     }
     if (strcmp(cmd, "jog2") == 0) {
+        COORDENADA c= mcts(e, vizinhasVazias(e));
+        printf("Jogatana: %d%d\n", c.coluna, 7- c.linha);
+        guarda_jogada(e, c);  jogar(e, c);
+        if(jogoAcabou(e)== 1){
+            mostrar_tabuleiro(e);  exit(0);
+        }
+        else prompt(e);
     }
     if (strcmp(cmd, "movs") == 0) {  //Comando movs
         imprime_lista_jogadas(e);
@@ -88,7 +95,7 @@ void infoDoJogo(ESTADO *e){
 }
 
 void prompt(ESTADO *e){
-    infoDoJogo(e);  mostrar_tabuleiro(e); mcts(e, vizinhasVazias(e)); interpretador(e);
+    infoDoJogo(e);  mostrar_tabuleiro(e); interpretador(e);
 }
 
 void guarda_tabuleiro(ESTADO *e, FILE *file) {

@@ -39,7 +39,6 @@ LISTA remove_cabeca(LISTA L){
         LISTA Aux= L;
         L= L-> proxCoord;
         free(Aux-> valor);
-        free(Aux-> proxCoord);
     }
     return L;
 }
