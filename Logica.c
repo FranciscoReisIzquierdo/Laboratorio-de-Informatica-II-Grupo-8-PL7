@@ -1,4 +1,5 @@
 #include <time.h>
+#include <math.h>
 #include "Logica.h"
 #include "Camada de Dados.h"
 #include "ListasLigadas.h"
@@ -64,84 +65,13 @@ int jogoAcabou(ESTADO *e){
     else return 0;
 }
 
-LISTA vizinhasVazias(ESTADO *e) {
+LISTA vizinhas(ESTADO *e) {
     LISTA vizinhasVazias = criar_lista();
     COORDENADA *casaVazia;  COORDENADA branca= e->ultima_jogada;
 
-    if(branca.linha== 0 && branca.coluna== 0){
-        for (int line = branca.linha; line != branca.linha + 1; line++) {
-            for (int coluna = branca.coluna; coluna != branca.coluna + 2; coluna++) {
-                if (e->tab[line][coluna] == VAZIO) {
-                    casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                    casaVazia->linha = line; casaVazia->coluna = coluna;
-                    vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-                }
-            }
-        }
-    }
-    else if(branca.linha== 7 && branca.coluna== 7){
-        for (int line = branca.linha -1; line != branca.linha + 1; line++) {
-            for (int coluna = branca.coluna - 1; coluna != branca.coluna + 1; coluna++) {
-                if (e->tab[line][coluna] == VAZIO) {
-                    casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                    casaVazia->linha = line; casaVazia->coluna = coluna;
-                    vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-                }
-            }
-        }
-    }
-
-    else if(branca.linha== 0){
-        for (int line = branca.linha; line != branca.linha + 2; line++) {
-           for (int coluna = branca.coluna - 1; coluna != branca.coluna + 2; coluna++) {
-               if (e->tab[line][coluna] == VAZIO) {
-                   casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                   casaVazia->linha = line; casaVazia->coluna = coluna;
-                   vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-               }
-           }
-       }
-        return vizinhasVazias;
-   }
-    else if(branca.linha== 7) {
-        for (int line = branca.linha -1; line != branca.linha + 1; line++) {
-            for (int coluna = branca.coluna - 1; coluna != branca.coluna + 2; coluna++) {
-                if (e->tab[line][coluna] == VAZIO) {
-                    casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                    casaVazia->linha = line; casaVazia->coluna = coluna;
-                    vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-                }
-            }
-        }
-        return vizinhasVazias;
-    }
-    else if(branca.coluna== 0){
-        for (int line = branca.linha -1; line != branca.linha + 2; line++) {
-            for (int coluna = branca.coluna; coluna != branca.coluna + 2; coluna++) {
-                if (e->tab[line][coluna] == VAZIO) {
-                    casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                    casaVazia->linha = line; casaVazia->coluna = coluna;
-                    vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-                }
-            }
-        }
-        return vizinhasVazias;
-    }
-    else if(branca.coluna== 7){
-        for (int line = branca.linha -1; line != branca.linha + 2; line++) {
-            for (int coluna = branca.coluna -1; coluna != branca.coluna + 1; coluna++) {
-                if (e->tab[line][coluna] == VAZIO) {
-                    casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
-                    casaVazia->linha = line; casaVazia->coluna = coluna;
-                    vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
-                }
-            }
-        }
-        return vizinhasVazias;
-    }
     for (int line = branca.linha -1; line != branca.linha + 2; line++) {
         for (int coluna = branca.coluna -1; coluna != branca.coluna + 2; coluna++) {
-            if (e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2){
+            if ((e->tab[line][coluna] == VAZIO || e->tab[line][coluna] == POS1 || e->tab[line][coluna] == POS2) && (line >= 0 && line < 8) && (coluna >= 0 && coluna < 8)){
                 casaVazia = (COORDENADA *) malloc(sizeof(COORDENADA));
                 casaVazia->linha = line; casaVazia->coluna = coluna;
                 vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
@@ -166,55 +96,91 @@ COORDENADA jogadaAleatoria(LISTA vizinhasVazias){
     return jogadaAl;
 }
 // Implementação da heurística de Monte Carlo Tree Search //
-COORDENADA mcts(ESTADO *e, LISTA vizinhasVazias) {
-    int jog = e->jogador_atual;  LISTA melhoresJogadas = criar_lista();  LISTA ultRecurso= vizinhasVazias;
 
+COORDENADA mcts(ESTADO *e, LISTA vizinhasVazias) {
+
+    int jog = e->jogador_atual;
+    LISTA melhoresJogadas = criar_lista();
+    LISTA ultRecurso = vizinhasVazias;
     while (lista_esta_vazia(vizinhasVazias)) {
         COORDENADA jogadaPossivel = *((COORDENADA *) vizinhasVazias->valor);
-        //printf("Lista: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
-
         if (jogadaPossivel.linha == 7 && jogadaPossivel.coluna == 0 && jog == 1) {
-            jogadaPossivel.linha = 7 - jogadaPossivel.linha;
-            return jogadaPossivel;
+            jogadaPossivel.linha = 7 - jogadaPossivel.linha;   return jogadaPossivel;
         }
-        if (jogadaPossivel.linha == 0 && jogadaPossivel.coluna == 7 && jog == 2) {
-            //printf("Escolha a coordenadaa: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
-            jogadaPossivel.linha = 7 - jogadaPossivel.linha;
-            return jogadaPossivel;
+        else if (jogadaPossivel.linha == 0 && jogadaPossivel.coluna == 7 && jog == 2) {
+            jogadaPossivel.linha = 7 - jogadaPossivel.linha;   return jogadaPossivel;
         }
-        if (((jogadaPossivel.linha == 0 && jogadaPossivel.coluna == 0) ||
+        else if (((jogadaPossivel.linha == 0 && jogadaPossivel.coluna == 0) ||
              (jogadaPossivel.linha == 7 && jogadaPossivel.coluna == 7)) && jogoAcabouMCTS(e, jogadaPossivel) == 3) {
-            //printf("Escolha a coordenadaaaa: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
-            jogadaPossivel.linha = 7 - jogadaPossivel.linha;
-            return jogadaPossivel;
+            jogadaPossivel.linha = 7 - jogadaPossivel.linha;   return jogadaPossivel;
+
         } else if ((jogadaPossivel.linha == 0 || jogadaPossivel.linha == 7 || jogadaPossivel.coluna == 0 || jogadaPossivel.coluna == 7) && jogoAcabouMCTS(e, jogadaPossivel) == 5) {
-            //printf("Escolha a coordenadaaaaaaa: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
-            jogadaPossivel.linha = 7 - jogadaPossivel.linha;
-            return jogadaPossivel;
+            jogadaPossivel.linha = 7 - jogadaPossivel.linha;   return jogadaPossivel;
+
         } else if (jogoAcabouMCTS(e, jogadaPossivel) == 8) {
-            //printf("Escolha a coordenada: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha);
-            jogadaPossivel.linha = 7 - jogadaPossivel.linha;
-            return jogadaPossivel;
-        } else if ((vizinhasDaCasaVencedora(jogadaPossivel) == 2 && jog == 2) || (vizinhasDaCasaVencedora(jogadaPossivel) == 1 && jog == 1)) {
-            //printf("Nao escolha a coordenada: %d%d\n", jogadaPossivel.coluna, jogadaPossivel.linha); //Não faz nada apenas para não entrar neste caso.
-        }
-        else{
-            if(verificaErro(e, jogadaPossivel)== 0)  melhoresJogadas= insere_cabeca(melhoresJogadas, vizinhasVazias->valor);
-        }
+            jogadaPossivel.linha = 7 - jogadaPossivel.linha;   return jogadaPossivel;
+        } else if ((vizinhasDaCasaVencedora(jogadaPossivel) == 2 && jog == 2) || (vizinhasDaCasaVencedora(jogadaPossivel) == 1 && jog == 1)) {/*Não faz nada apenas para não entrar neste caso.*/ }
+
+        else if (verificaErro(e, jogadaPossivel) == 0)   melhoresJogadas = insere_cabeca(melhoresJogadas, vizinhasVazias->valor);
         vizinhasVazias = vizinhasVazias->proxCoord;
     }
-    //imprimeLista(melhoresJogadas); imprimeLista(ultRecurso);
-    e-> tab[e->ultima_jogada.linha][e->ultima_jogada.coluna]= BRANCA;
-    if(melhoresJogadas== NULL){
-        COORDENADA aleatoria1= jogadaAleatoria(ultRecurso);
+    e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = BRANCA;
+    imprimeLista(melhoresJogadas);
+    if (melhoresJogadas == NULL) {
+        COORDENADA aleatoria1 = jogadaAleatoria(ultRecurso);
         return aleatoria1;
-    }
-    else{
-        COORDENADA aleatoria2= jogadaAleatoria(melhoresJogadas);
-        //printf("Jogadaaaa: %d%d\n", aleatoria.coluna, aleatoria.linha);
-        return aleatoria2;
+    } else {
+        COORDENADA c= bestMove(e, melhoresJogadas);
+        return c;
     }
 }
+/*
+while (lista_esta_vazia(melhoresJogadas)) {
+            COORDENADA jogatana = *((COORDENADA *) melhoresJogadas->valor);
+
+            e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = PRETA;
+            e->ultima_jogada = jogatana;
+            e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
+            changePlayer(e); jog= e->jogador_atual;
+            LISTA prov = vizinhas(e);  LISTA bestMoves= criar_lista();
+            while (lista_esta_vazia(prov)) {
+                COORDENADA c = *((COORDENADA *) prov->valor);
+                if((vizinhasDaCasaVencedora(c) == 2 && jog == 1) || (vizinhasDaCasaVencedora(c) == 1 && jog == 2)) {// Não insere a coordenada //}
+                }
+                else if (((c.linha == 0 && c.coluna == 0) || (c.linha == 7 && c.coluna == 7)) && jogoAcabouMCTS(e, c) == 3){// Não insere a coordenada //}
+                }
+                else if ((c.linha == 0 || c.linha == 7 || c.coluna == 0 || c.coluna == 7) && jogoAcabouMCTS(e, c) == 5){// Não insere a coordenada //}
+                }
+                else if (jogoAcabouMCTS(e, c) == 8){// Não insere a coordenada //}
+                }
+                else bestMoves=insere_cabeca(bestMoves, prov->valor);
+}
+
+
+LISTA mctsSearcing(ESTADO *e, LISTA melhoresJogadas){
+    COORDENADA last= e->ultima_jogada;   LISTA best= criar_lista();
+    while (lista_esta_vazia(melhoresJogadas)) {
+        int count = 0;
+        COORDENADA jogatana = *((COORDENADA *) melhoresJogadas->valor);
+        e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = PRETA;   e->ultima_jogada = jogatana;   e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
+        LISTA prov = vizinhas(e);
+        while (lista_esta_vazia(prov)) {
+            COORDENADA c = *((COORDENADA *) prov->valor);
+            e->tab[jogatana.linha][jogatana.coluna] = PRETA;   e->ultima_jogada = c;   e->tab[c.linha][c.coluna] = BRANCA;
+            LISTA exaustiva = vizinhas(e);
+            if (numElementos(exaustiva) == 2) {/*Exaustiva é a lista de movimentos do meu bot e se for 2 vou perder*/
+        /*    e->tab[c.linha][c.coluna] = VAZIO;   e->ultima_jogada = jogatana;   e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
+            prov = prov->proxCoord;
+        }
+        if (count == 0) best = insere_cabeca(best, melhoresJogadas->valor);
+        e->tab[jogatana.linha][jogatana.coluna] = VAZIO;   e->ultima_jogada = last;   e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = BRANCA;
+        melhoresJogadas = melhoresJogadas->proxCoord;
+    }
+            return best;
+}
+
+
+//Se o adversário tiver alguma jogada que faça com que eu tenha apenas 2 movimentos possiveis eu perco//
 
 int jogoAcabouMCTS(ESTADO *e, COORDENADA c){
     int count= 0; e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= PRETA;
@@ -234,30 +200,22 @@ int verificaErro(ESTADO *e, COORDENADA temp){
         e->tab [temp.linha][temp.coluna]= BRANCA;
         e->ultima_jogada= temp;
 
-        LISTA temporaria= vizinhasVazias(e);
+        LISTA temporaria= vizinhas(e);
         while(lista_esta_vazia(temporaria)){
             COORDENADA jogadaPossivel= *((COORDENADA *) temporaria-> valor);
 
             if(((jogadaPossivel.linha == 0 && jogadaPossivel.coluna== 0) || (jogadaPossivel.linha== 7 && jogadaPossivel.coluna== 7)) && jogoAcabouMCTS(e, jogadaPossivel)== 3){
-                //printf("Nao escolha a coordenada: %d%d\n", temp.coluna, temp.linha);
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;
-                e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
             }
             else if((jogadaPossivel.linha== 0 || jogadaPossivel.linha== 7 || jogadaPossivel.coluna== 0 || jogadaPossivel.coluna== 7) && jogoAcabouMCTS(e, jogadaPossivel)== 5){
-                //printf("Nao escolha a coordenada: %d%d\n", temp.coluna, temp.linha);
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;
-                e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
             }
             else if(jogoAcabouMCTS(e, jogadaPossivel)== 8) {
-                //printf("Nao escolha a coordenada: %d%d\n", temp.coluna, temp.linha);
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;
-                e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
             }
             temporaria= temporaria-> proxCoord;
         }
-        e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;
-        e->ultima_jogada= save;
-        return 0;
+        e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 0;
 }
 
 int vizinhasDaCasaVencedora(COORDENADA c){
@@ -274,4 +232,31 @@ int imprimeLista(LISTA vizinhasVazias){
         vizinhasVazias= vizinhasVazias->proxCoord;
     }
     return 1;
+}
+
+COORDENADA bestMove(ESTADO *e, LISTA L){
+    COORDENADA c;  int player= e->jogador_atual, num= BUF_SIZE;
+    while (lista_esta_vazia(L)){
+        COORDENADA jogada = *((COORDENADA *) L->valor);
+        if(player== 1) {
+            int aux = (jogada.linha - 7)* (jogada.linha - 7) + (jogada.coluna -0)* (jogada.coluna -0);
+            if(num> aux){
+                num= aux;
+                c= jogada;
+                L= L->proxCoord;
+            }
+            else L= L->proxCoord;
+        }
+        if(player== 2){
+            int aux = (jogada.linha - 0)* (jogada.linha - 0) + (jogada.coluna -7)* (jogada.coluna -7);
+            if(num> aux){
+                num= aux;
+                c= jogada;
+                L= L->proxCoord;
+            }
+            else L= L->proxCoord;
+        }
+    }
+    c.linha= 7- c.linha;
+    return c;
 }

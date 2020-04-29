@@ -7,7 +7,7 @@
 int jogar(ESTADO *e, COORDENADA c);
 int jogadaValida(ESTADO *e, COORDENADA c);
 int jogoAcabou(ESTADO *e);
-LISTA vizinhasVazias(ESTADO *e);
+LISTA vizinhas(ESTADO *e);
 COORDENADA jogadaAleatoria(LISTA vizinhasVazias);
 COORDENADA mcts(ESTADO *e, LISTA L);
 int jogoAcabouMCTS(ESTADO *e, COORDENADA c);
@@ -16,6 +16,8 @@ int jogadasVazias(ESTADO *e, COORDENADA c);
 int verificaErro(ESTADO *e, COORDENADA tmp);
 int jogoAcabouMCTSAux(ESTADO *e, COORDENADA c);
 int vizinhasDaCasaVencedora(COORDENADA c);
+LISTA mctsSearcing(ESTADO *e, LISTA melhoresJogadas);
 int imprimeLista(LISTA L);
+COORDENADA bestMove(ESTADO *e, LISTA L);
 
 #endif //PROJETOLI2_LOGICA_H

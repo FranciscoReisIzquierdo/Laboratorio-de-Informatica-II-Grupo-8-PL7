@@ -30,15 +30,15 @@ int interpretador(ESTADO *e) {
     char *cmd = strtok(command, " ");
     if (strcmp(cmd, "jog") == 0) {  //Comando jog (Bot)
         printf("Jogada efectuada pelo bot\n");
-        guarda_jogada(e, jogadaAleatoria(vizinhasVazias(e)));
-        jogar(e, jogadaAleatoria(vizinhasVazias(e)));  //guarda a jogada e joga
+        guarda_jogada(e, jogadaAleatoria(vizinhas(e)));
+        jogar(e, jogadaAleatoria(vizinhas(e)));  //guarda a jogada e joga
         if (jogoAcabou(e) == 1) {     //verifica se o jogo acabou
             mostrar_tabuleiro(e);
             exit(0);
         } else prompt(e);
     }
     if (strcmp(cmd, "jog2") == 0) {
-        COORDENADA c= mcts(e, vizinhasVazias(e));
+        COORDENADA c= mcts(e, vizinhas(e));
         printf("Jogatana: %d%d\n", c.coluna, 7- c.linha);
         guarda_jogada(e, c);  jogar(e, c);
         if(jogoAcabou(e)== 1){
@@ -77,7 +77,7 @@ int interpretador(ESTADO *e) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         if (jogadaValida(e, coord) == 0) prompt(e);
         else {
-            guarda_jogada(e, coord);  jogar(e, coord);   //guarda a jogada e joga
+            vizinhas(e);  guarda_jogada(e, coord);  jogar(e, coord);   //guarda a jogada e joga
             if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
                  mostrar_tabuleiro(e);  exit(0) ;
             }
