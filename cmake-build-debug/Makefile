@@ -47,10 +47,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7
+CMAKE_SOURCE_DIR = C:\Users\franc\CLionProjects\LI2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\franc\CLionProjects\LI2\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\franc\CLionProjects\LI2\cmake-build-debug\CMakeFiles C:\Users\franc\CLionProjects\LI2\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\franc\CLionProjects\LI2\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ Interface.c.s:
 	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/Interface.c.s
 .PHONY : Interface.c.s
 
+ListasLigadas.obj: ListasLigadas.c.obj
+
+.PHONY : ListasLigadas.obj
+
+# target to build an object file
+ListasLigadas.c.obj:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj
+.PHONY : ListasLigadas.c.obj
+
+ListasLigadas.i: ListasLigadas.c.i
+
+.PHONY : ListasLigadas.i
+
+# target to preprocess a source file
+ListasLigadas.c.i:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.i
+.PHONY : ListasLigadas.c.i
+
+ListasLigadas.s: ListasLigadas.c.s
+
+.PHONY : ListasLigadas.s
+
+# target to generate assembly for a file
+ListasLigadas.c.s:
+	$(MAKE) -f CMakeFiles\ProjetoLI2.dir\build.make CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.s
+.PHONY : ListasLigadas.c.s
+
 Logica.obj: Logica.c.obj
 
 .PHONY : Logica.obj
@@ -245,6 +272,9 @@ help:
 	@echo ... Interface.obj
 	@echo ... Interface.i
 	@echo ... Interface.s
+	@echo ... ListasLigadas.obj
+	@echo ... ListasLigadas.i
+	@echo ... ListasLigadas.s
 	@echo ... Logica.obj
 	@echo ... Logica.i
 	@echo ... Logica.s

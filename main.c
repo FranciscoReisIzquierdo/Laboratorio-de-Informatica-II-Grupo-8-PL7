@@ -1,8 +1,9 @@
-#include <stdio.h>
 #include "Logica.h"
+#include "ListasLigadas.h"
 
 int main() {
     ESTADO *e = inicializar_estado();
+<<<<<<< HEAD
     mostrar_tabuleiro(e);
     prompt(e);
     putchar('\n');
@@ -11,3 +12,7 @@ int main() {
 }
 
 
+=======
+    prompt(e);
+}
+>>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12

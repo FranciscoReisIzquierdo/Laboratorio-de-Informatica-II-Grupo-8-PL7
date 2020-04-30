@@ -6,6 +6,7 @@
 
 #IncludeRegexTransform: 
 
+<<<<<<< HEAD
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.c
 Camada de Dados.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
@@ -15,6 +16,11 @@ stdlib.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
 
 C:/Users/franc/CLionProjects/ProjetoLI2/Interface.c
+=======
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
+
+C:/Users/franc/CLionProjects/LI2/Interface.c
+>>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12
 stdio.h
 -
 string.h
@@ -22,11 +28,19 @@ string.h
 stdlib.h
 -
 Camada de Dados.h
+<<<<<<< HEAD
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
 Interface.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Interface.h
 
 C:/Users/franc/CLionProjects/ProjetoLI2/Interface.h
+=======
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
+Interface.h
+C:/Users/franc/CLionProjects/LI2/Interface.h
+
+C:/Users/franc/CLionProjects/LI2/Interface.h
+>>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12
 stdio.h
 -
 string.h
@@ -34,6 +48,7 @@ string.h
 stdlib.h
 -
 Logica.h
+<<<<<<< HEAD
 C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
 
 C:/Users/franc/CLionProjects/ProjetoLI2/Logica.c
@@ -53,4 +68,37 @@ stdio.h
 -
 Logica.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
+=======
+C:/Users/franc/CLionProjects/LI2/Logica.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+Camada de Dados.h
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
+
+C:/Users/franc/CLionProjects/LI2/Logica.c
+time.h
+-
+Logica.h
+C:/Users/franc/CLionProjects/LI2/Logica.h
+Camada de Dados.h
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+
+C:/Users/franc/CLionProjects/LI2/Logica.h
+Camada de Dados.h
+C:/Users/franc/CLionProjects/LI2/Camada de Dados.h
+Interface.h
+C:/Users/franc/CLionProjects/LI2/Interface.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+
+C:/Users/franc/CLionProjects/LI2/main.c
+Logica.h
+C:/Users/franc/CLionProjects/LI2/Logica.h
+ListasLigadas.h
+C:/Users/franc/CLionProjects/LI2/ListasLigadas.h
+>>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12
 

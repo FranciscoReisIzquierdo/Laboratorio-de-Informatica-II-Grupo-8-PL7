@@ -7,15 +7,22 @@ CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj: ../Camada\ de\ Dados.h
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../Camada\ de\ Dados.h
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../Interface.c
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../Interface.h
+CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../ListasLigadas.h
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../Logica.h
+
+CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj: ../Camada\ de\ Dados.h
+CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj: ../ListasLigadas.c
+CMakeFiles/ProjetoLI2.dir/ListasLigadas.c.obj: ../ListasLigadas.h
 
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../Camada\ de\ Dados.h
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../Interface.h
+CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../ListasLigadas.h
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../Logica.c
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../Logica.h
 
 CMakeFiles/ProjetoLI2.dir/main.c.obj: ../Camada\ de\ Dados.h
 CMakeFiles/ProjetoLI2.dir/main.c.obj: ../Interface.h
+CMakeFiles/ProjetoLI2.dir/main.c.obj: ../ListasLigadas.h
 CMakeFiles/ProjetoLI2.dir/main.c.obj: ../Logica.h
 CMakeFiles/ProjetoLI2.dir/main.c.obj: ../main.c
 
