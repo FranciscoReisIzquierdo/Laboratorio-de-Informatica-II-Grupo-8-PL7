@@ -1,5 +1,4 @@
 #include <time.h>
-#include <math.h>
 #include "Logica.h"
 #include "Camada de Dados.h"
 #include "ListasLigadas.h"
@@ -125,14 +124,12 @@ COORDENADA mcts(ESTADO *e, LISTA vizinhasVazias) {
         vizinhasVazias = vizinhasVazias->proxCoord;
     }
     e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = BRANCA;
-    imprimeLista(melhoresJogadas);
     melhoresJogadas= mctsSearcing(e, melhoresJogadas);
-    putchar('\n');  imprimeLista(melhoresJogadas);
     if (melhoresJogadas == NULL) {
         COORDENADA aleatoria1 = jogadaAleatoria(ultRecurso);
         return aleatoria1;
     } else {
-        COORDENADA c= bestMove(e, melhoresJogadas);
+        COORDENADA c= distancia_euclidiana(e, melhoresJogadas);
         return c;
     }
 }
@@ -163,6 +160,7 @@ LISTA mctsSearcing(ESTADO *e, LISTA melhoresJogadas){
         e->tab[jogatana.linha][jogatana.coluna] = VAZIO;   e->ultima_jogada = last;   e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = BRANCA;
         melhoresJogadas = melhoresJogadas->proxCoord;
     }
+    e->tab[7][0]= POS1; e->tab[0][7]= POS2;
             return best;
 }
 
@@ -177,7 +175,7 @@ int jogoAcabouMCTS(ESTADO *e, COORDENADA c){
                 count++;
         }
     }
-    e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= BRANCA;
+    e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= BRANCA; e->tab[7][0]= POS1; e->tab[0][7]= POS2;
     return count;
 }
 
@@ -192,13 +190,16 @@ int verificaErro(ESTADO *e, COORDENADA temp){
             COORDENADA jogadaPossivel= *((COORDENADA *) temporaria-> valor);
 
             if(((jogadaPossivel.linha == 0 && jogadaPossivel.coluna== 0) || (jogadaPossivel.linha== 7 && jogadaPossivel.coluna== 7)) && jogoAcabouMCTS(e, jogadaPossivel)== 3){
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO; e->tab[7][0]= POS1; e->tab[0][7]= POS2;
+                e->ultima_jogada= save;  return 1;
             }
             else if((jogadaPossivel.linha== 0 || jogadaPossivel.linha== 7 || jogadaPossivel.coluna== 0 || jogadaPossivel.coluna== 7) && jogoAcabouMCTS(e, jogadaPossivel)== 5){
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO; e->tab[7][0]= POS1; e->tab[0][7]= POS2;
+                e->ultima_jogada= save;  return 1;
             }
             else if(jogoAcabouMCTS(e, jogadaPossivel)== 8) {
-                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO;  e->ultima_jogada= save;  return 1;
+                e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= VAZIO; e->tab[7][0]= POS1; e->tab[0][7]= POS2;
+                e->ultima_jogada= save;  return 1;
             }
             temporaria= temporaria-> proxCoord;
         }
@@ -221,7 +222,7 @@ int imprimeLista(LISTA vizinhasVazias){
     return 1;
 }
 
-COORDENADA bestMove(ESTADO *e, LISTA L){
+COORDENADA distancia_euclidiana(ESTADO *e, LISTA L){
     COORDENADA c;  int player= e->jogador_atual, num= BUF_SIZE;
     while (lista_esta_vazia(L)){
         COORDENADA jogada = *((COORDENADA *) L->valor);
