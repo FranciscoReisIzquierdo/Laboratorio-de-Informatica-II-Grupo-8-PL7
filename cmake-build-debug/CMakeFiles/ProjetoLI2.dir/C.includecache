@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.c
+Camada de Dados.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
+stdlib.h
+-
+
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
 
 C:/Users/franc/CLionProjects/ProjetoLI2/Interface.c
@@ -30,9 +36,21 @@ stdlib.h
 Logica.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
 
+C:/Users/franc/CLionProjects/ProjetoLI2/Logica.c
+Logica.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
+Camada de Dados.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
+
 C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
 Camada de Dados.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Camada de Dados.h
 Interface.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Interface.h
+
+C:/Users/franc/CLionProjects/ProjetoLI2/main.c
+stdio.h
+-
+Logica.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Logica.h
 

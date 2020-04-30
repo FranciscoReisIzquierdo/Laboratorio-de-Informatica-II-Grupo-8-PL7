@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.3.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\franc\CLionProjects\ProjetoLI2
+CMAKE_SOURCE_DIR = C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ProjetoLI2.dir/depend.make
@@ -58,55 +58,55 @@ include CMakeFiles/ProjetoLI2.dir/flags.make
 
 CMakeFiles/ProjetoLI2.dir/main.c.obj: CMakeFiles/ProjetoLI2.dir/flags.make
 CMakeFiles/ProjetoLI2.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ProjetoLI2.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\main.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/ProjetoLI2.dir/main.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\main.c.obj   -c C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\main.c
 
 CMakeFiles/ProjetoLI2.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLI2.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\main.c > CMakeFiles\ProjetoLI2.dir\main.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\main.c > CMakeFiles\ProjetoLI2.dir\main.c.i
 
 CMakeFiles/ProjetoLI2.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLI2.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\main.c -o CMakeFiles\ProjetoLI2.dir\main.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\main.c -o CMakeFiles\ProjetoLI2.dir\main.c.s
 
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: CMakeFiles/ProjetoLI2.dir/flags.make
 CMakeFiles/ProjetoLI2.dir/Logica.c.obj: ../Logica.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ProjetoLI2.dir/Logica.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Logica.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/ProjetoLI2.dir/Logica.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Logica.c.obj   -c C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Logica.c
 
 CMakeFiles/ProjetoLI2.dir/Logica.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLI2.dir/Logica.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Logica.c > CMakeFiles\ProjetoLI2.dir\Logica.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Logica.c > CMakeFiles\ProjetoLI2.dir\Logica.c.i
 
 CMakeFiles/ProjetoLI2.dir/Logica.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLI2.dir/Logica.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Logica.c -o CMakeFiles\ProjetoLI2.dir\Logica.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Logica.c -o CMakeFiles\ProjetoLI2.dir\Logica.c.s
 
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: CMakeFiles/ProjetoLI2.dir/flags.make
 CMakeFiles/ProjetoLI2.dir/Interface.c.obj: ../Interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ProjetoLI2.dir/Interface.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Interface.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/ProjetoLI2.dir/Interface.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Interface.c.obj   -c C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Interface.c
 
 CMakeFiles/ProjetoLI2.dir/Interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLI2.dir/Interface.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Interface.c > CMakeFiles\ProjetoLI2.dir\Interface.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Interface.c > CMakeFiles\ProjetoLI2.dir\Interface.c.i
 
 CMakeFiles/ProjetoLI2.dir/Interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLI2.dir/Interface.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Interface.c -o CMakeFiles\ProjetoLI2.dir\Interface.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Interface.c -o CMakeFiles\ProjetoLI2.dir\Interface.c.s
 
 CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj: CMakeFiles/ProjetoLI2.dir/flags.make
 CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj: ../Camada\ de\ Dados.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.obj   -c "C:\Users\franc\CLionProjects\ProjetoLI2\Camada de Dados.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.obj   -c "C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Camada de Dados.c"
 
 CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\franc\CLionProjects\ProjetoLI2\Camada de Dados.c" > CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Camada de Dados.c" > CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.i
 
 CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ProjetoLI2.dir/Camada_de_Dados.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\franc\CLionProjects\ProjetoLI2\Camada de Dados.c" -o CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\Camada de Dados.c" -o CMakeFiles\ProjetoLI2.dir\Camada_de_Dados.c.s
 
 # Object files for target ProjetoLI2
 ProjetoLI2_OBJECTS = \
@@ -126,7 +126,7 @@ ProjetoLI2.exe: CMakeFiles/ProjetoLI2.dir/build.make
 ProjetoLI2.exe: CMakeFiles/ProjetoLI2.dir/linklibs.rsp
 ProjetoLI2.exe: CMakeFiles/ProjetoLI2.dir/objects1.rsp
 ProjetoLI2.exe: CMakeFiles/ProjetoLI2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ProjetoLI2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable ProjetoLI2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ProjetoLI2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -139,6 +139,6 @@ CMakeFiles/ProjetoLI2.dir/clean:
 .PHONY : CMakeFiles/ProjetoLI2.dir/clean
 
 CMakeFiles/ProjetoLI2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\franc\CLionProjects\ProjetoLI2 C:\Users\franc\CLionProjects\ProjetoLI2 C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug C:\Users\franc\CLionProjects\ProjetoLI2\cmake-build-debug\CMakeFiles\ProjetoLI2.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7 C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7 C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug C:\Users\Utilizador\Laboratorio-de-Informatica-II-Grupo-8-PL7\cmake-build-debug\CMakeFiles\ProjetoLI2.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ProjetoLI2.dir/depend
 

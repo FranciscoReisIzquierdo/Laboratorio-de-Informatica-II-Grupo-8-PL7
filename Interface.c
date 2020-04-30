@@ -8,7 +8,6 @@
 void mostrar_tabuleiro(ESTADO *e) {
     for (int i=0; i < 8; i++) {
         for (int j = 0; j < 8; j++) {
-
             if (e->tab[i][j] == VAZIO) putchar('.');
             if (e->tab[i][j] == POS2) putchar('2');
             if (e->tab[i][j] == POS1) putchar('1');
@@ -27,11 +26,7 @@ int interpretador(ESTADO *e) {
     if(strlen(linha) == 3 && sscanf(linha, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
         jogar(e, coord);
-        prompt(e);
+        mostrar_tabuleiro(e);
     }
     return 1;
-}
-
-void prompt(ESTADO *e){
-    printf("Player:%d Numero da Jogada:%d", (e-> jogador_atual), (e->num_jogadas));
 }
