@@ -126,6 +126,8 @@ COORDENADA mcts(ESTADO *e, LISTA vizinhasVazias) {
     }
     e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = BRANCA;
     imprimeLista(melhoresJogadas);
+    melhoresJogadas= mctsSearcing(e, melhoresJogadas);
+    putchar('\n');  imprimeLista(melhoresJogadas);
     if (melhoresJogadas == NULL) {
         COORDENADA aleatoria1 = jogadaAleatoria(ultRecurso);
         return aleatoria1;
@@ -134,28 +136,6 @@ COORDENADA mcts(ESTADO *e, LISTA vizinhasVazias) {
         return c;
     }
 }
-/*
-while (lista_esta_vazia(melhoresJogadas)) {
-            COORDENADA jogatana = *((COORDENADA *) melhoresJogadas->valor);
-
-            e->tab[e->ultima_jogada.linha][e->ultima_jogada.coluna] = PRETA;
-            e->ultima_jogada = jogatana;
-            e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
-            changePlayer(e); jog= e->jogador_atual;
-            LISTA prov = vizinhas(e);  LISTA bestMoves= criar_lista();
-            while (lista_esta_vazia(prov)) {
-                COORDENADA c = *((COORDENADA *) prov->valor);
-                if((vizinhasDaCasaVencedora(c) == 2 && jog == 1) || (vizinhasDaCasaVencedora(c) == 1 && jog == 2)) {// Não insere a coordenada //}
-                }
-                else if (((c.linha == 0 && c.coluna == 0) || (c.linha == 7 && c.coluna == 7)) && jogoAcabouMCTS(e, c) == 3){// Não insere a coordenada //}
-                }
-                else if ((c.linha == 0 || c.linha == 7 || c.coluna == 0 || c.coluna == 7) && jogoAcabouMCTS(e, c) == 5){// Não insere a coordenada //}
-                }
-                else if (jogoAcabouMCTS(e, c) == 8){// Não insere a coordenada //}
-                }
-                else bestMoves=insere_cabeca(bestMoves, prov->valor);
-}
-
 
 LISTA mctsSearcing(ESTADO *e, LISTA melhoresJogadas){
     COORDENADA last= e->ultima_jogada;   LISTA best= criar_lista();
@@ -166,10 +146,17 @@ LISTA mctsSearcing(ESTADO *e, LISTA melhoresJogadas){
         LISTA prov = vizinhas(e);
         while (lista_esta_vazia(prov)) {
             COORDENADA c = *((COORDENADA *) prov->valor);
-            e->tab[jogatana.linha][jogatana.coluna] = PRETA;   e->ultima_jogada = c;   e->tab[c.linha][c.coluna] = BRANCA;
+            e->tab[jogatana.linha][jogatana.coluna] = PRETA;   e->ultima_jogada = c;   e->tab[c.linha][c.coluna]= BRANCA;
             LISTA exaustiva = vizinhas(e);
-            if (numElementos(exaustiva) == 2) {/*Exaustiva é a lista de movimentos do meu bot e se for 2 vou perder*/
-        /*    e->tab[c.linha][c.coluna] = VAZIO;   e->ultima_jogada = jogatana;   e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
+            while (lista_esta_vazia(exaustiva)){
+                COORDENADA mymove = *((COORDENADA *) melhoresJogadas->valor);
+                e->tab[c.linha][c.coluna]= PRETA;   e->ultima_jogada= mymove;   e->tab[mymove.linha][mymove.coluna]= BRANCA;
+                LISTA ult= vizinhas(e);
+                if(numElementos(ult)== 1) count++;
+                e->tab[mymove.linha][mymove.coluna]= VAZIO; e->ultima_jogada= c;  e->tab[c.linha][c.coluna]= BRANCA;
+                exaustiva= exaustiva-> proxCoord;
+            }
+               e->tab[c.linha][c.coluna] = VAZIO;   e->ultima_jogada = jogatana;   e->tab[jogatana.linha][jogatana.coluna] = BRANCA;
             prov = prov->proxCoord;
         }
         if (count == 0) best = insere_cabeca(best, melhoresJogadas->valor);
