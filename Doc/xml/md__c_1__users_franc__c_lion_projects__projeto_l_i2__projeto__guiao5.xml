@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5" kind="page">
+    <compoundname>md_C:_Users_franc_CLionProjects_ProjetoLI2_Projeto_Guiao5</compoundname>
+    <title>Relatório do Guião 5</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect2 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md1">
+<title>Camada de Dados</title>
+<para>Este módulo é com certeza um dos mais importantes do programa, uma vez que é nele onde estão definidas todas as estruturas a serem usadas ao longo do jogo como <emphasis>CASA</emphasis>, <emphasis>COORDENADAS</emphasis>, etc. Em baixo seguem as definições das várias estruturas definidas neste módulo.</para>
+<para><bold>tab</bold>: Armazena informação sobre o tabuleiro.</para>
+<para><bold>ultima_jogada</bold>: Indica a coordenada da última jogada.</para>
+<para><bold>jogadas armazena</bold>: Informação sobre as jogadas.</para>
+<para><bold>num_jogadas</bold>: Indica quantas jogadas foram efetuadas.</para>
+<para><bold>jogador_atual</bold>: Indica qual é o jogador a jogar.</para>
+<para><bold>inicializar_estado</bold>: Esta função cria um estado vazio (com o tabuleiro inicializado), onde é identificado a posição vencedora do jogador 1 (<emphasis>POS1</emphasis>), a posição vencedora do jogador 2 (<emphasis>POS2</emphasis>) e onde se começa a jogar no tabuleiro (<emphasis>BRANCA</emphasis>). As referências em itálico supramencionadas dizem respeito a uma das estruturas pré-definidas pelos docentes no <emphasis>header file</emphasis> da <bold>Camada de Dados</bold> onde correspondem aos tipos de casas, sendo que as restantes após uma jogada, a casa anterior fica preenchida por &apos;#&apos; (<emphasis>PRETA</emphasis>).</para>
+<para><hruler/>
+</para>
+</sect2>
+<sect2 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md3">
+<title>Lógica do programa</title>
+<para>Neste módulo é implementada a função que incrementa uma jogada, tal como o título refere, nste módulo é tratada a lógica do jogo em si. Assim, é criada a função <bold>jogar</bold>.</para>
+<para><bold>jogar</bold>: Esta função recebe o estado atual e uma coordenada e modifica o estado ao jogar na casa correta se a jogada for válida. A função devolve verdadeiro (valor diferente de zero) se for possível jogar e falso (zero) caso não seja possível. Ao fim de realizar a jogada, a função mostra o tabuleiro com a jogada efectuada com a função <bold>mostrar_tabuleiro</bold> do módulo seguidamente explicado</para>
+<para><hruler/>
+ </para>
+</sect2>
+<sect2 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md5">
+<title>Interface do Programa</title>
+<para>Neste módulo seguem duas tarefas a implementar:<orderedlist>
+<listitem><para>Mostrar o tabuleiro</para>
+</listitem><listitem><para>Criar um interpretador de comandos. Neste guião é de salientar que iremos usar a função pré-definida do intrepretador de comandos sem a alterar.</para>
+<para>Para tal, segue-se a descrição de cada uma dessas tarefas.</para>
+</listitem></orderedlist>
+</para>
+<sect4 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md6">
+<title>Mostrar o tabuleiro</title>
+<para><bold>mostrar_tabuleiro</bold>: Função que recebe o estado do jogo e imprime o tabuleiro com esse dado estado.</para>
+</sect4>
+<sect4 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md7">
+<title>Interpretador de comandos</title>
+<para>O interpretador de comandos deverá funcionar da seguinte maneira:<orderedlist>
+<listitem><para>Ler uma linha (usando fgets)</para>
+</listitem><listitem><para>Separar a linha por espaços (por exemplo utilizando sscanf ou strtok)</para>
+</listitem><listitem><para>Conforme o comando a executar, chamar a função correspondente do interface ou da lógica do programa e depois do interface.</para>
+</listitem></orderedlist>
+</para>
+<para><bold>interpretador</bold>: Função que recebe o estado atual do jogo e conforme os argumentos (neste caso <emphasis>COORDENADAS</emphasis>) da função <bold>jogar</bold>, aplica o comando da jogada a efectuar.</para>
+<para><hruler/>
+ </para>
+</sect4>
+</sect2>
+<sect2 id="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5_1autotoc_md9">
+<title>Main</title>
+<para>Módulo com a função main.</para>
+<para><bold>main</bold>: Como não podia faltar, a função main é a função principal onde se faz correr todo o processo em conjunto. Desta forma, esta função recebe as funções principais de cada módulo supramencionada (<bold>inicializar_estado</bold>, <bold>mostrar_tabuleiro</bold> e <bold>interpretador</bold>). </para>
+</sect2>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

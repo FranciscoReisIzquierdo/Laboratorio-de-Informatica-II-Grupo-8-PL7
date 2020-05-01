@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação do Jogo Rastros: Código-Fonte de C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Documentação do Jogo Rastros
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_ed353eea8d78a173a119b387b77c750d.html">CLionProjects</a></li><li class="navelem"><a class="el" href="dir_daf95ddc1586b4e1c9bf97093a82e431.html">ProjetoLI2</a></li><li class="navelem"><a class="el" href="dir_f7fabca4bb866a16b5d9c674c569272f.html">Projeto</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Interface.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_interface_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_logica_8h.html">Logica.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_listas_ligadas_8h.html">ListasLigadas.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#aa0b6c1689e60ac852a73d67e066c1df5">mostrar_tabuleiro</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_interface_8h.html#a24da95ebeede4a540e37790ce8be359b">interpretador</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#a33d09196f922a638847c19f3aca3fc3c">prompt</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#a33d09196f922a638847c19f3aca3fc3c">prompt</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#ac6ba6903841d89881ec2a82a92e78e97">guarda_tabuleiro</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, FILE *file);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#ac26e0d7ed56680d6fc065460680c854b">le_Tabuleiro</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, FILE *file);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#afe6681136412d180864cf8a98074616e">guarda_jogada</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <a class="code" href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a> c);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#a8b9a69824721b40b61bc274606db4574">imprime_lista_jogadas</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_interface_8h.html#a080221f1fb3ebae3e0e8033b1c9b7582">infoDoJogo</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_interface_8h.html#ac1accaecb5b3613a5d4bd15f4e0daada">comandoPos</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <span class="keywordtype">int</span> numero);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_interface_8h.html#a137eeea7ee5d9588403bd6ac8b1efa2e">numeroValido</a>(<a class="code" href="struct_e_s_t_a_d_o.html">ESTADO</a> *e, <span class="keywordtype">int</span> numero);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#ifndef PROJETOLI2_INTERFACE_H</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#define PROJETOLI2_INTERFACE_H</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif //PROJETOLI2_INTERFACE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_interface_8h_html_a8b9a69824721b40b61bc274606db4574"><div class="ttname"><a href="_interface_8h.html#a8b9a69824721b40b61bc274606db4574">imprime_lista_jogadas</a></div><div class="ttdeci">void imprime_lista_jogadas(ESTADO *e)</div><div class="ttdoc">Função que ao executar o comando movs, imprime no ecrã a lista de todas as jogadas efectuadas por amb...</div><div class="ttdef"><b>Definition:</b> Interface.c:188</div></div>
+<div class="ttc" id="astruct_c_o_o_r_d_e_n_a_d_a_html"><div class="ttname"><a href="struct_c_o_o_r_d_e_n_a_d_a.html">COORDENADA</a></div><div class="ttdoc">Tipo de dados para as coordenadas.</div><div class="ttdef"><b>Definition:</b> Camada de Dados.h:17</div></div>
+<div class="ttc" id="a_logica_8h_html"><div class="ttname"><a href="_logica_8h.html">Logica.h</a></div></div>
+<div class="ttc" id="a_interface_8h_html_a080221f1fb3ebae3e0e8033b1c9b7582"><div class="ttname"><a href="_interface_8h.html#a080221f1fb3ebae3e0e8033b1c9b7582">infoDoJogo</a></div><div class="ttdeci">void infoDoJogo(ESTADO *e)</div><div class="ttdoc">Função que imprime na parte superior do ecrã, as informações relevantes aos jogadores,...</div><div class="ttdef"><b>Definition:</b> Interface.c:98</div></div>
+<div class="ttc" id="a_interface_8h_html_a33d09196f922a638847c19f3aca3fc3c"><div class="ttname"><a href="_interface_8h.html#a33d09196f922a638847c19f3aca3fc3c">prompt</a></div><div class="ttdeci">void prompt(ESTADO *e)</div><div class="ttdoc">Função responsável por em cada iteração, chamar a função que mostra o tabuleiro do jogo,...</div><div class="ttdef"><b>Definition:</b> Interface.c:102</div></div>
+<div class="ttc" id="a_interface_8h_html_ac6ba6903841d89881ec2a82a92e78e97"><div class="ttname"><a href="_interface_8h.html#ac6ba6903841d89881ec2a82a92e78e97">guarda_tabuleiro</a></div><div class="ttdeci">void guarda_tabuleiro(ESTADO *e, FILE *file)</div><div class="ttdoc">Função que dado a execução do comando gr, guarda num ficheiro de texto o estado em que se encontra o ...</div><div class="ttdef"><b>Definition:</b> Interface.c:106</div></div>
+<div class="ttc" id="a_interface_8h_html_a137eeea7ee5d9588403bd6ac8b1efa2e"><div class="ttname"><a href="_interface_8h.html#a137eeea7ee5d9588403bd6ac8b1efa2e">numeroValido</a></div><div class="ttdeci">int numeroValido(ESTADO *e, int numero)</div><div class="ttdoc">Função auxiliar da função supramencionada, que verifica se o número da jogada à qual se pretende regr...</div><div class="ttdef"><b>Definition:</b> Interface.c:280</div></div>
+<div class="ttc" id="a_interface_8h_html_afe6681136412d180864cf8a98074616e"><div class="ttname"><a href="_interface_8h.html#afe6681136412d180864cf8a98074616e">guarda_jogada</a></div><div class="ttdeci">void guarda_jogada(ESTADO *e, COORDENADA c)</div><div class="ttdoc">Função que após cada jogada efectuada, guarda a coordenada correspondente na array de jogadas disponí...</div><div class="ttdef"><b>Definition:</b> Interface.c:180</div></div>
+<div class="ttc" id="astruct_e_s_t_a_d_o_html"><div class="ttname"><a href="struct_e_s_t_a_d_o.html">ESTADO</a></div><div class="ttdoc">Tipo de dados para o estado.</div><div class="ttdef"><b>Definition:</b> Camada de Dados.h:39</div></div>
+<div class="ttc" id="a_interface_8h_html_aa0b6c1689e60ac852a73d67e066c1df5"><div class="ttname"><a href="_interface_8h.html#aa0b6c1689e60ac852a73d67e066c1df5">mostrar_tabuleiro</a></div><div class="ttdeci">void mostrar_tabuleiro(ESTADO *e)</div><div class="ttdoc">Esta função é responsável por mostrar o estado atual do jogo.</div><div class="ttdef"><b>Definition:</b> Interface.c:8</div></div>
+<div class="ttc" id="a_interface_8h_html_ac1accaecb5b3613a5d4bd15f4e0daada"><div class="ttname"><a href="_interface_8h.html#ac1accaecb5b3613a5d4bd15f4e0daada">comandoPos</a></div><div class="ttdeci">int comandoPos(ESTADO *e, int numero)</div><div class="ttdoc">Função responsável por executar o comando pos, de forma a retornar a uma posição anterior e jogar a p...</div><div class="ttdef"><b>Definition:</b> Interface.c:223</div></div>
+<div class="ttc" id="a_interface_8h_html_ac26e0d7ed56680d6fc065460680c854b"><div class="ttname"><a href="_interface_8h.html#ac26e0d7ed56680d6fc065460680c854b">le_Tabuleiro</a></div><div class="ttdeci">void le_Tabuleiro(ESTADO *e, FILE *file)</div><div class="ttdoc">Função que dado a execução do comando ler, lê de um ficheiro de texto o estado em que se encontrava o...</div><div class="ttdef"><b>Definition:</b> Interface.c:146</div></div>
+<div class="ttc" id="a_interface_8h_html_a24da95ebeede4a540e37790ce8be359b"><div class="ttname"><a href="_interface_8h.html#a24da95ebeede4a540e37790ce8be359b">interpretador</a></div><div class="ttdeci">int interpretador(ESTADO *e)</div><div class="ttdoc">Função que permite ao jogador interagir com o programa (efectuando jogadas ou comandos),...</div><div class="ttdef"><b>Definition:</b> Interface.c:25</div></div>
+<div class="ttc" id="a_listas_ligadas_8h_html"><div class="ttname"><a href="_listas_ligadas_8h.html">ListasLigadas.h</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

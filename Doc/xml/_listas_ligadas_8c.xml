@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_listas_ligadas_8c" kind="file" language="C++">
+    <compoundname>ListasLigadas.c</compoundname>
+    <includes refid="_listas_ligadas_8h" local="yes">ListasLigadas.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Camada de Dados.h</label>
+        <link refid="_camada_01de_01_dados_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c</label>
+        <link refid="_listas_ligadas_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ListasLigadas.h</label>
+        <link refid="_listas_ligadas_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_listas_ligadas_8c_1ae3b99323b6f8f35d80bb69ff1a27985e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+        <definition>LISTA criar_lista</definition>
+        <argsstring>()</argsstring>
+        <name>criar_lista</name>
+        <briefdescription>
+<para>Cria uma lista vazia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Lista criada </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="4" column="7" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="4" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1a37ba5fc3cfddb6bc94d4b54b00bc696e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+        <definition>LISTA insere_cabeca</definition>
+        <argsstring>(LISTA L, void *valor)</argsstring>
+        <name>insere_cabeca</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+<para>Insere um valor na cabeça da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista na qual vai ser introduzida o valor </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>coord</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor a introdzir </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista resusltante da inserção do valor na lista inicial </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="9" column="7" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1abfcb205f3eb670157be0d1221021714b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* devolve_cabeca</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>devolve_cabeca</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Devolve a cabeça da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista da qual se pretende devolver a cabeça </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Valor da cabeça da lista </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="26" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1ad9380152361127432c55c1c6067e05ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+        <definition>LISTA proximo</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>proximo</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Devolve a cauda da lista. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista da qual se quer apenas a cauda </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Cauda da lista </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="30" column="7" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="30" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1a9026a681a68322b5ec7f07137b864cbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+        <definition>LISTA remove_cabeca</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>remove_cabeca</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Remove a cabeça da lista (libertando o espaço ocupado) e devolve a cauda. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista que s pertende remover a cabeça </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Lista resultante da remoção da cabeça da lista anterior </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="36" column="7" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1a4c10928f7acaa4e3de3760cea0dfd9c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lista_esta_vazia</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>lista_esta_vazia</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Devolve verdareiro se a lista é vazia. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista que vai ser analisada se está vazia ou não </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna 1 se a lista estiver vazia e retorna 0 caso contrário </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="46" column="5" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="_listas_ligadas_8c_1a412bdb892988b834dbbf5258b8ef07c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numElementos</definition>
+        <argsstring>(LISTA L)</argsstring>
+        <name>numElementos</name>
+        <param>
+          <type><ref refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kindref="member">LISTA</ref></type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+<para>Conta o número de elemtentos que uma lista tem. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Lista que vai ser analisada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de elementos da lista </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" line="51" column="5" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" bodystart="51" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_listas_ligadas_8h" kindref="compound">ListasLigadas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/><ref refid="_listas_ligadas_8c_1ae3b99323b6f8f35d80bb69ff1a27985e" kindref="member">criar_lista</ref>(){</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>l=<sp/>NULL;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/><ref refid="_listas_ligadas_8c_1a37ba5fc3cfddb6bc94d4b54b00bc696e" kindref="member">insere_cabeca</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*valor){</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(L==<sp/>NULL){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>l=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">NodoLista</ref>));</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a51ff9db7c96f254ed9d6c22ee51ab5f9" kindref="member">valor</ref>=<sp/>valor;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" kindref="member">proxCoord</ref>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L=<sp/>l;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>aux<sp/>=<sp/>L;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>l<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">NodoLista</ref>));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a51ff9db7c96f254ed9d6c22ee51ab5f9" kindref="member">valor</ref><sp/>=<sp/>valor;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" kindref="member">proxCoord</ref><sp/>=<sp/>aux;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L<sp/>=<sp/>l;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="_listas_ligadas_8c_1abfcb205f3eb670157be0d1221021714b" kindref="member">devolve_cabeca</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(L<sp/>!=<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L-&gt;<sp/>valor;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/><ref refid="_listas_ligadas_8c_1ad9380152361127432c55c1c6067e05ae" kindref="member">proximo</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(L==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>L=<sp/>L-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" kindref="member">proxCoord</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/><ref refid="_listas_ligadas_8c_1a9026a681a68322b5ec7f07137b864cbd" kindref="member">remove_cabeca</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(L==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>EXIT_SUCCESS;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>Aux=<sp/>L;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L=<sp/>L-&gt;<sp/>proxCoord;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(Aux-&gt;<sp/>valor);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>L;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_listas_ligadas_8c_1a4c10928f7acaa4e3de3760cea0dfd9c0" kindref="member">lista_esta_vazia</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(L==<sp/>NULL)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_listas_ligadas_8c_1a412bdb892988b834dbbf5258b8ef07c6" kindref="member">numElementos</ref>(<ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTA</ref><sp/>L){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num=<sp/>0;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_listas_ligadas_8c_1a4c10928f7acaa4e3de3760cea0dfd9c0" kindref="member">lista_esta_vazia</ref>(L)!=<sp/>0){</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>num++;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>L=<sp/>L-&gt;<ref refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" kindref="member">proxCoord</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>num;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c"/>
+  </compounddef>
+</doxygen>

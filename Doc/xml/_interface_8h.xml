@@ -1,0 +1,478 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_interface_8h" kind="file" language="C++">
+    <compoundname>Interface.h</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="_logica_8h" local="yes">Logica.h</includes>
+    <includes refid="_listas_ligadas_8h" local="yes">ListasLigadas.h</includes>
+    <includedby refid="_interface_8c" local="yes">C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c</includedby>
+    <includedby refid="_logica_8h" local="yes">C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>Logica.h</label>
+        <link refid="_logica_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Camada de Dados.h</label>
+        <link refid="_camada_01de_01_dados_8h"/>
+      </node>
+      <node id="7">
+        <label>ListasLigadas.h</label>
+        <link refid="_listas_ligadas_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h</label>
+        <link refid="_interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c</label>
+        <link refid="_logica_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.h</label>
+        <link refid="_logica_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c</label>
+        <link refid="_interface_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h</label>
+        <link refid="_interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/main.c</label>
+        <link refid="main_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mostrar_tabuleiro</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>mostrar_tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Esta função é responsável por mostrar o estado atual do jogo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado (atual) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="16" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="8" bodyend="23" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1a24da95ebeede4a540e37790ce8be359b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int interpretador</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>interpretador</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que permite ao jogador interagir com o programa (efectuando jogadas ou comandos), analisando o que o jogador efectua. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna 1 caso o jogo acabe, de forma a terminar o programa </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="23" column="5" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="25" bodyend="96" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1a33d09196f922a638847c19f3aca3fc3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void prompt</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>prompt</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função responsável por em cada iteração, chamar a função que mostra o tabuleiro do jogo, as informações do jogo e o interpretador de comandos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="24" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="102" bodyend="104" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1ac6ba6903841d89881ec2a82a92e78e97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void guarda_tabuleiro</definition>
+        <argsstring>(ESTADO *e, FILE *file)</argsstring>
+        <name>guarda_tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Função que dado a execução do comando gr, guarda num ficheiro de texto o estado em que se encontra o jogo. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ficheiro de texto que foi anteriormente aberto aquando da execução do comando gr </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="37" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="106" bodyend="144" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="37" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1ac26e0d7ed56680d6fc065460680c854b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void le_Tabuleiro</definition>
+        <argsstring>(ESTADO *e, FILE *file)</argsstring>
+        <name>le_Tabuleiro</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>FILE *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+<para>Função que dado a execução do comando ler, lê de um ficheiro de texto o estado em que se encontrava o jogo quando foi guardado, atualizando o estado atual para o que fora guardado. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado atual </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ficheiro texto que contém o estado que foi guardado, bem como a lista de movimentos feito até à execução do comando gr </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="44" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="146" bodyend="178" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1afe6681136412d180864cf8a98074616e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void guarda_jogada</definition>
+        <argsstring>(ESTADO *e, COORDENADA c)</argsstring>
+        <name>guarda_jogada</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Função que após cada jogada efectuada, guarda a coordenada correspondente na array de jogadas disponível na camada de dados do programa. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coordenada a guardar pela função </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="51" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="180" bodyend="186" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="51" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1a8b9a69824721b40b61bc274606db4574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imprime_lista_jogadas</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>imprime_lista_jogadas</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que ao executar o comando movs, imprime no ecrã a lista de todas as jogadas efectuadas por ambos os jogadores até ao momento. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="57" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="188" bodyend="221" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="57" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1a080221f1fb3ebae3e0e8033b1c9b7582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void infoDoJogo</definition>
+        <argsstring>(ESTADO *e)</argsstring>
+        <name>infoDoJogo</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+<para>Função que imprime na parte superior do ecrã, as informações relevantes aos jogadores, como qual o jogador a jogar (jogador atual), qual a coordenada atual (última jogada) e quantas jogadas foram efectuadas. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="63" column="6" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="98" bodyend="100" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="63" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1ac1accaecb5b3613a5d4bd15f4e0daada" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int comandoPos</definition>
+        <argsstring>(ESTADO *e, int numero)</argsstring>
+        <name>comandoPos</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numero</declname>
+        </param>
+        <briefdescription>
+<para>Função responsável por executar o comando pos, de forma a retornar a uma posição anterior e jogar a partir desta, avaliando se o núemro da jogada à qual se quer regressar é possível (caso seja igual ou maior não irá regressar), sendo o jogador 1 sempre o 1º a jogar após a execução do comando pos. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Numero de jogadas efectuadas até então </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna 0 quando concluir a atualização do estado atual para um estado anterior </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="71" column="5" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="223" bodyend="278" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="71" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="_interface_8h_1a137eeea7ee5d9588403bd6ac8b1efa2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int numeroValido</definition>
+        <argsstring>(ESTADO *e, int numero)</argsstring>
+        <name>numeroValido</name>
+        <param>
+          <type><ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref> *</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numero</declname>
+        </param>
+        <briefdescription>
+<para>Função auxiliar da função supramencionada, que verifica se o número da jogada à qual se pretende regressar é possível ou não, isto é se o número for maior ou igual qu o número de jogadas até então efectuadas é impossível. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apontador para o estado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numero</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número introduzido pelo jogador aquando da execução do comando pos </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna 1 caso dê para retornar à jogada pretendida e 0 caso contrário </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" line="79" column="5" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" bodystart="280" bodyend="286" declfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h" declline="79" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Definição dos vários comandos (gr, ler, movs, pos, jog e jog2) e da parte gráfica do jogo Rastros </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_logica_8h" kindref="compound">Logica.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_listas_ligadas_8h" kindref="compound">ListasLigadas.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kindref="member">mostrar_tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a24da95ebeede4a540e37790ce8be359b" kindref="member">interpretador</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a33d09196f922a638847c19f3aca3fc3c" kindref="member">prompt</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a33d09196f922a638847c19f3aca3fc3c" kindref="member">prompt</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1ac6ba6903841d89881ec2a82a92e78e97" kindref="member">guarda_tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1ac26e0d7ed56680d6fc065460680c854b" kindref="member">le_Tabuleiro</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/>FILE<sp/>*file);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1afe6681136412d180864cf8a98074616e" kindref="member">guarda_jogada</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/><ref refid="struct_c_o_o_r_d_e_n_a_d_a" kindref="compound">COORDENADA</ref><sp/>c);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a8b9a69824721b40b61bc274606db4574" kindref="member">imprime_lista_jogadas</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a080221f1fb3ebae3e0e8033b1c9b7582" kindref="member">infoDoJogo</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1ac1accaecb5b3613a5d4bd15f4e0daada" kindref="member">comandoPos</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_interface_8h_1a137eeea7ee5d9588403bd6ac8b1efa2e" kindref="member">numeroValido</ref>(<ref refid="struct_e_s_t_a_d_o" kindref="compound">ESTADO</ref><sp/>*e,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numero);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PROJETOLI2_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROJETOLI2_INTERFACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//PROJETOLI2_INTERFACE_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h"/>
+  </compounddef>
+</doxygen>

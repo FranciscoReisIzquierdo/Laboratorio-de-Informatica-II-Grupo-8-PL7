@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_guiao5_8md" kind="file" language="Markdown">
+    <compoundname>Guiao5.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>Relatório<sp/>do<sp/>Guião<sp/>5</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Camada<sp/>de<sp/>Dados</highlight></codeline>
+<codeline><highlight class="normal">Este<sp/>módulo<sp/>é<sp/>com<sp/>certeza<sp/>um<sp/>dos<sp/>mais<sp/>importantes<sp/>do<sp/>programa,<sp/>uma<sp/>vez<sp/>que<sp/>é<sp/>nele<sp/>onde<sp/>estão<sp/>definidas<sp/>todas<sp/>as<sp/>estruturas<sp/>a<sp/>serem<sp/>usadas<sp/>ao<sp/>longo<sp/>do<sp/>jogo<sp/>como<sp/>*CASA*,<sp/>*COORDENADAS*,<sp/>etc.<sp/>Em<sp/>baixo<sp/>seguem<sp/>as<sp/>definições<sp/>das<sp/>várias<sp/>estruturas<sp/>definidas<sp/>neste<sp/>módulo.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**tab**:<sp/>Armazena<sp/>informação<sp/>sobre<sp/>o<sp/>tabuleiro.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">**ultima_jogada**:<sp/>Indica<sp/>a<sp/>coordenada<sp/>da<sp/>última<sp/>jogada.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**jogadas<sp/>armazena**:<sp/>Informação<sp/>sobre<sp/>as<sp/>jogadas.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**num_jogadas**:<sp/>Indica<sp/>quantas<sp/>jogadas<sp/>foram<sp/>efetuadas.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**jogador_atual**:<sp/>Indica<sp/>qual<sp/>é<sp/>o<sp/>jogador<sp/>a<sp/>jogar.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**inicializar_estado**:<sp/>Esta<sp/>função<sp/>cria<sp/>um<sp/>estado<sp/>vazio<sp/>(com<sp/>o<sp/>tabuleiro</highlight></codeline>
+<codeline><highlight class="normal">inicializado),<sp/>onde<sp/>é<sp/>identificado<sp/>a<sp/>posição<sp/>vencedora<sp/>do<sp/>jogador<sp/>1<sp/>(*POS1*),<sp/>a<sp/>posição<sp/>vencedora<sp/>do<sp/>jogador<sp/>2<sp/>(*POS2*)<sp/>e<sp/>onde<sp/>se<sp/>começa<sp/>a<sp/>jogar<sp/>no<sp/>tabuleiro<sp/>(*BRANCA*).</highlight></codeline>
+<codeline><highlight class="normal">As<sp/>referências<sp/>em<sp/>itálico<sp/>supramencionadas<sp/>dizem<sp/>respeito<sp/>a<sp/>uma<sp/>das<sp/>estruturas<sp/>pré-definidas<sp/>pelos<sp/>docentes<sp/>no<sp/>*header<sp/>file*<sp/>da<sp/>**Camada<sp/>de<sp/>Dados**<sp/>onde<sp/>correspondem<sp/>aos<sp/>tipos<sp/>de<sp/>casas,<sp/>sendo<sp/>que<sp/>as<sp/>restantes<sp/>após<sp/>uma<sp/>jogada,<sp/>a<sp/>casa<sp/>anterior<sp/>fica<sp/>preenchida<sp/>por<sp/>&apos;#&apos;<sp/>(*PRETA*).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Lógica<sp/>do<sp/>programa</highlight></codeline>
+<codeline><highlight class="normal">Neste<sp/>módulo<sp/>é<sp/>implementada<sp/>a<sp/>função<sp/>que<sp/>incrementa<sp/>uma<sp/>jogada,<sp/>tal<sp/>como<sp/>o<sp/>título<sp/>refere,<sp/>nste<sp/>módulo<sp/>é<sp/>tratada<sp/>a<sp/>lógica<sp/>do<sp/>jogo<sp/>em<sp/>si.<sp/>Assim,<sp/>é<sp/>criada<sp/>a<sp/>função<sp/>**jogar**.</highlight></codeline>
+<codeline><highlight class="normal"><sp/></highlight></codeline>
+<codeline><highlight class="normal">**jogar**:<sp/>Esta<sp/>função<sp/>recebe<sp/>o<sp/>estado<sp/>atual<sp/>e<sp/>uma<sp/>coordenada<sp/>e<sp/>modifica</highlight></codeline>
+<codeline><highlight class="normal">o<sp/>estado<sp/>ao<sp/>jogar<sp/>na<sp/>casa<sp/>correta<sp/>se<sp/>a<sp/>jogada<sp/>for<sp/>válida.<sp/>A<sp/>função<sp/>devolve</highlight></codeline>
+<codeline><highlight class="normal">verdadeiro<sp/>(valor<sp/>diferente<sp/>de<sp/>zero)<sp/>se<sp/>for<sp/>possível<sp/>jogar<sp/>e<sp/>falso<sp/>(zero)<sp/>caso</highlight></codeline>
+<codeline><highlight class="normal">não<sp/>seja<sp/>possível.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Ao<sp/>fim<sp/>de<sp/>realizar<sp/>a<sp/>jogada,<sp/>a<sp/>função<sp/>mostra<sp/>o<sp/>tabuleiro<sp/>com<sp/>a<sp/>jogada<sp/>efectuada<sp/>com<sp/>a<sp/>função<sp/>**mostrar_tabuleiro**<sp/>do<sp/>módulo<sp/>seguidamente<sp/>explicado</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Interface<sp/>do<sp/>Programa</highlight></codeline>
+<codeline><highlight class="normal">Neste<sp/>módulo<sp/>seguem<sp/>duas<sp/>tarefas<sp/>a<sp/>implementar:<sp/></highlight></codeline>
+<codeline><highlight class="normal">1.<sp/>Mostrar<sp/>o<sp/>tabuleiro</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Criar<sp/>um<sp/>interpretador<sp/>de<sp/>comandos.<sp/>Neste<sp/>guião<sp/>é<sp/>de<sp/>salientar<sp/>que<sp/>iremos<sp/>usar<sp/>a<sp/>função<sp/>pré-definida<sp/>do<sp/>intrepretador<sp/>de<sp/>comandos<sp/>sem<sp/>a<sp/>alterar.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>Para<sp/>tal,<sp/>segue-se<sp/>a<sp/>descrição<sp/>de<sp/>cada<sp/>uma<sp/>dessas<sp/>tarefas.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Mostrar<sp/>o<sp/>tabuleiro</highlight></codeline>
+<codeline><highlight class="normal">**mostrar_tabuleiro**:<sp/>Função<sp/>que<sp/>recebe<sp/>o<sp/>estado<sp/>do<sp/>jogo<sp/>e<sp/>imprime<sp/>o<sp/>tabuleiro<sp/>com<sp/>esse<sp/>dado<sp/>estado.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Interpretador<sp/>de<sp/>comandos</highlight></codeline>
+<codeline><highlight class="normal">O<sp/>interpretador<sp/>de<sp/>comandos<sp/>deverá<sp/>funcionar<sp/>da<sp/>seguinte<sp/>maneira:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>1.<sp/>Ler<sp/>uma<sp/>linha<sp/>(usando<sp/>fgets)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>2.<sp/>Separar<sp/>a<sp/>linha<sp/>por<sp/>espaços<sp/>(por<sp/>exemplo<sp/>utilizando<sp/>sscanf<sp/>ou<sp/>strtok)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>3.<sp/>Conforme<sp/>o<sp/>comando<sp/>a<sp/>executar,<sp/>chamar<sp/>a<sp/>função<sp/>correspondente<sp/>do</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>interface<sp/>ou<sp/>da<sp/>lógica<sp/>do<sp/>programa<sp/>e<sp/>depois<sp/>do<sp/>interface.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**interpretador**:<sp/>Função<sp/>que<sp/>recebe<sp/>o<sp/>estado<sp/>atual<sp/>do<sp/>jogo<sp/>e<sp/>conforme<sp/>os<sp/>argumentos<sp/>(neste<sp/>caso<sp/>*COORDENADAS*)<sp/>da<sp/>função<sp/>**jogar**,<sp/>aplica<sp/>o<sp/>comando<sp/>da<sp/>jogada<sp/>a<sp/>efectuar.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">---</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Main</highlight></codeline>
+<codeline><highlight class="normal">Módulo<sp/>com<sp/>a<sp/>função<sp/>main.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**main**:<sp/>Como<sp/>não<sp/>podia<sp/>faltar,<sp/>a<sp/>função<sp/>main<sp/>é<sp/>a<sp/>função<sp/>principal<sp/>onde<sp/>se<sp/>faz<sp/>correr<sp/>todo<sp/>o<sp/>processo<sp/>em<sp/>conjunto.</highlight></codeline>
+<codeline><highlight class="normal">Desta<sp/>forma,<sp/>esta<sp/>função<sp/>recebe<sp/>as<sp/>funções<sp/>principais<sp/>de<sp/>cada<sp/>módulo<sp/>supramencionada<sp/>(**inicializar_estado**,<sp/>**mostrar_tabuleiro**<sp/>e<sp/>**interpretador**).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Guiao5.md"/>
+  </compounddef>
+</doxygen>

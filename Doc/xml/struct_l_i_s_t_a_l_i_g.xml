@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="struct_l_i_s_t_a_l_i_g" kind="struct" language="C++" prot="public">
+    <compoundname>LISTALIG</compoundname>
+    <includes refid="_listas_ligadas_8h" local="no">ListasLigadas.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_l_i_s_t_a_l_i_g_1a51ff9db7c96f254ed9d6c22ee51ab5f9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* LISTALIG::valor</definition>
+        <argsstring></argsstring>
+        <name>valor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" line="14" column="10" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct_l_i_s_t_a_l_i_g" kindref="compound">LISTALIG</ref> *</type>
+        <definition>struct LISTALIG* LISTALIG::proxCoord</definition>
+        <argsstring></argsstring>
+        <name>proxCoord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" line="15" column="19" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Tipo de dados para uma lista ligada. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>LISTALIG</label>
+        <link refid="struct_l_i_s_t_a_l_i_g"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>proxCoord</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" line="13" column="1" bodyfile="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.h" bodystart="13" bodyend="16"/>
+    <listofallmembers>
+      <member refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" prot="public" virt="non-virtual"><scope>LISTALIG</scope><name>proxCoord</name></member>
+      <member refid="struct_l_i_s_t_a_l_i_g_1a51ff9db7c96f254ed9d6c22ee51ab5f9" prot="public" virt="non-virtual"><scope>LISTALIG</scope><name>valor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

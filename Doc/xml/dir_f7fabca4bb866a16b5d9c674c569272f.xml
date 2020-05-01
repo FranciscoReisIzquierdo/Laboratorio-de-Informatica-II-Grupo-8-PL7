@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_f7fabca4bb866a16b5d9c674c569272f" kind="dir">
+    <compoundname>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto</compoundname>
+    <innerfile refid="_camada_01de_01_dados_8c">Camada de Dados.c</innerfile>
+    <innerfile refid="_camada_01de_01_dados_8h">Camada de Dados.h</innerfile>
+    <innerfile refid="_interface_8c">Interface.c</innerfile>
+    <innerfile refid="_interface_8h">Interface.h</innerfile>
+    <innerfile refid="_listas_ligadas_8c">ListasLigadas.c</innerfile>
+    <innerfile refid="_listas_ligadas_8h">ListasLigadas.h</innerfile>
+    <innerfile refid="_logica_8c">Logica.c</innerfile>
+    <innerfile refid="_logica_8h">Logica.h</innerfile>
+    <innerfile refid="main_8c">main.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/"/>
+  </compounddef>
+</doxygen>

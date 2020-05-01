@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.18"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Documentação do Jogo Rastros: Relatório do Guião 5</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Documentação do Jogo Rastros
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.18 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Relatório do Guião 5 </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h2><a class="anchor" id="autotoc_md1"></a>
+Camada de Dados</h2>
+<p>Este módulo é com certeza um dos mais importantes do programa, uma vez que é nele onde estão definidas todas as estruturas a serem usadas ao longo do jogo como <em>CASA</em>, <em>COORDENADAS</em>, etc. Em baixo seguem as definições das várias estruturas definidas neste módulo.</p>
+<p><b>tab</b>: Armazena informação sobre o tabuleiro.</p>
+<p><b>ultima_jogada</b>: Indica a coordenada da última jogada.</p>
+<p><b>jogadas armazena</b>: Informação sobre as jogadas.</p>
+<p><b>num_jogadas</b>: Indica quantas jogadas foram efetuadas.</p>
+<p><b>jogador_atual</b>: Indica qual é o jogador a jogar.</p>
+<p><b>inicializar_estado</b>: Esta função cria um estado vazio (com o tabuleiro inicializado), onde é identificado a posição vencedora do jogador 1 (<em>POS1</em>), a posição vencedora do jogador 2 (<em>POS2</em>) e onde se começa a jogar no tabuleiro (<em>BRANCA</em>). As referências em itálico supramencionadas dizem respeito a uma das estruturas pré-definidas pelos docentes no <em>header file</em> da <b>Camada de Dados</b> onde correspondem aos tipos de casas, sendo que as restantes após uma jogada, a casa anterior fica preenchida por '#' (<em>PRETA</em>).</p>
+<hr  />
+<h2><a class="anchor" id="autotoc_md3"></a>
+Lógica do programa</h2>
+<p>Neste módulo é implementada a função que incrementa uma jogada, tal como o título refere, nste módulo é tratada a lógica do jogo em si. Assim, é criada a função <b>jogar</b>.</p>
+<p><b>jogar</b>: Esta função recebe o estado atual e uma coordenada e modifica o estado ao jogar na casa correta se a jogada for válida. A função devolve verdadeiro (valor diferente de zero) se for possível jogar e falso (zero) caso não seja possível. Ao fim de realizar a jogada, a função mostra o tabuleiro com a jogada efectuada com a função <b>mostrar_tabuleiro</b> do módulo seguidamente explicado</p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md5"></a>
+Interface do Programa</h2>
+<p>Neste módulo seguem duas tarefas a implementar:</p><ol type="1">
+<li>Mostrar o tabuleiro</li>
+<li><p class="startli">Criar um interpretador de comandos. Neste guião é de salientar que iremos usar a função pré-definida do intrepretador de comandos sem a alterar.</p>
+<p class="startli">Para tal, segue-se a descrição de cada uma dessas tarefas.</p>
+</li>
+</ol>
+<h4><a class="anchor" id="autotoc_md6"></a>
+Mostrar o tabuleiro</h4>
+<p><b>mostrar_tabuleiro</b>: Função que recebe o estado do jogo e imprime o tabuleiro com esse dado estado.</p>
+<h4><a class="anchor" id="autotoc_md7"></a>
+Interpretador de comandos</h4>
+<p>O interpretador de comandos deverá funcionar da seguinte maneira:</p><ol type="1">
+<li>Ler uma linha (usando fgets)</li>
+<li>Separar a linha por espaços (por exemplo utilizando sscanf ou strtok)</li>
+<li>Conforme o comando a executar, chamar a função correspondente do interface ou da lógica do programa e depois do interface.</li>
+</ol>
+<p><b>interpretador</b>: Função que recebe o estado atual do jogo e conforme os argumentos (neste caso <em>COORDENADAS</em>) da função <b>jogar</b>, aplica o comando da jogada a efectuar.</p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md9"></a>
+Main</h2>
+<p>Módulo com a função main.</p>
+<p><b>main</b>: Como não podia faltar, a função main é a função principal onde se faz correr todo o processo em conjunto. Desta forma, esta função recebe as funções principais de cada módulo supramencionada (<b>inicializar_estado</b>, <b>mostrar_tabuleiro</b> e <b>interpretador</b>). </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.18
+</small></address>
+</body>
+</html>

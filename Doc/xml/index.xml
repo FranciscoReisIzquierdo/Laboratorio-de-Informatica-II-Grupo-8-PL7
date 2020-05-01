@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.18">
+  <compound refid="struct_c_o_o_r_d_e_n_a_d_a" kind="struct"><name>COORDENADA</name>
+    <member refid="struct_c_o_o_r_d_e_n_a_d_a_1adfbc8d4856ce807139fdf62e00aed29a" kind="variable"><name>coluna</name></member>
+    <member refid="struct_c_o_o_r_d_e_n_a_d_a_1aefe14bcc5a066ac3b21500cc3d28c06f" kind="variable"><name>linha</name></member>
+  </compound>
+  <compound refid="struct_e_s_t_a_d_o" kind="struct"><name>ESTADO</name>
+    <member refid="struct_e_s_t_a_d_o_1ab56f0f1be16954d3768b4174d14c087d" kind="variable"><name>tab</name></member>
+    <member refid="struct_e_s_t_a_d_o_1a4896a5c5c1f40b43fb795623327e3f47" kind="variable"><name>ultima_jogada</name></member>
+    <member refid="struct_e_s_t_a_d_o_1afae43b87a488fad0f2b56a18bad31d18" kind="variable"><name>jogadas</name></member>
+    <member refid="struct_e_s_t_a_d_o_1a261495728744647e618b4e623f5a4b7a" kind="variable"><name>num_jogadas</name></member>
+    <member refid="struct_e_s_t_a_d_o_1a5dd28e2e68b7aef2b6b7ea88e02eff58" kind="variable"><name>jogador_atual</name></member>
+  </compound>
+  <compound refid="struct_j_o_g_a_d_a" kind="struct"><name>JOGADA</name>
+    <member refid="struct_j_o_g_a_d_a_1a93d9306cb0c49b66b7d9a615bffe0149" kind="variable"><name>jogador1</name></member>
+    <member refid="struct_j_o_g_a_d_a_1ab46b16dfbdc7f2af9430c8dcdac0914b" kind="variable"><name>jogador2</name></member>
+  </compound>
+  <compound refid="struct_l_i_s_t_a_l_i_g" kind="struct"><name>LISTALIG</name>
+    <member refid="struct_l_i_s_t_a_l_i_g_1a51ff9db7c96f254ed9d6c22ee51ab5f9" kind="variable"><name>valor</name></member>
+    <member refid="struct_l_i_s_t_a_l_i_g_1a50762591dcd3b4db680db63793216b90" kind="variable"><name>proxCoord</name></member>
+  </compound>
+  <compound refid="_camada_01de_01_dados_8c" kind="file"><name>Camada de Dados.c</name>
+    <member refid="_camada_01de_01_dados_8c_1a7e0c7e26fb685d9ab501e19b05e6954f" kind="function"><name>inicializar_estado</name></member>
+    <member refid="_camada_01de_01_dados_8c_1abdc7faf5ee1e393e5abfb68b146d0371" kind="function"><name>giveUltColuna</name></member>
+    <member refid="_camada_01de_01_dados_8c_1aba719808f9808e1b7a92d9ac963a0550" kind="function"><name>giveUltLinha</name></member>
+    <member refid="_camada_01de_01_dados_8c_1a7165dae099a6650cab9974eb7de161e8" kind="function"><name>incrJogada</name></member>
+    <member refid="_camada_01de_01_dados_8c_1a7df9c53e22befe94327ee92135e5c152" kind="function"><name>changePlayer</name></member>
+    <member refid="_camada_01de_01_dados_8c_1ae7e229be0513d84bfae07481bb8461cc" kind="function"><name>winner</name></member>
+    <member refid="_camada_01de_01_dados_8c_1a7e34cff69495db56cd9b72679c7ee9f0" kind="function"><name>linhaAnterior</name></member>
+    <member refid="_camada_01de_01_dados_8c_1a3c7ee4730f880762a2c2d701d4595fa3" kind="function"><name>colunaAnterior</name></member>
+    <member refid="_camada_01de_01_dados_8c_1a4fd7b6c4be7ce266e46cd4f63e6f48fa" kind="function"><name>linhaaa</name></member>
+    <member refid="_camada_01de_01_dados_8c_1af35e61f379420082b8510cac826ef0cb" kind="function"><name>colunaaa</name></member>
+    <member refid="_camada_01de_01_dados_8c_1aa1b5dbe15baf7d66d0a324ffd92ce0f3" kind="function"><name>jogAtual</name></member>
+    <member refid="_camada_01de_01_dados_8c_1af439769cc6b4f943152652a669d24489" kind="function"><name>numJogada</name></member>
+  </compound>
+  <compound refid="_camada_01de_01_dados_8h" kind="file"><name>Camada de Dados.h</name>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039" kind="enum"><name>CASA</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039abc711f491a56ec7af7a688be508c5113" kind="enumvalue"><name>VAZIO</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039ad24485fddec75419fd4a0cc9edda0ca5" kind="enumvalue"><name>BRANCA</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039a007278eb3827d19891b47cdd3ac8846d" kind="enumvalue"><name>PRETA</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039adbf30221bdff40891fc1a1f6b5cf20e4" kind="enumvalue"><name>POS1</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba91601f16d4c485b2d9b8c429f27039a82361df9d511ef14b9e4b6f8312684dc" kind="enumvalue"><name>POS2</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a94c221d29a1760f008b7834093259b7d" kind="typedef"><name>JOGADAS</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a7e0c7e26fb685d9ab501e19b05e6954f" kind="function"><name>inicializar_estado</name></member>
+    <member refid="_camada_01de_01_dados_8h_1abdc7faf5ee1e393e5abfb68b146d0371" kind="function"><name>giveUltColuna</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aba719808f9808e1b7a92d9ac963a0550" kind="function"><name>giveUltLinha</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a7165dae099a6650cab9974eb7de161e8" kind="function"><name>incrJogada</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a7df9c53e22befe94327ee92135e5c152" kind="function"><name>changePlayer</name></member>
+    <member refid="_camada_01de_01_dados_8h_1ae7e229be0513d84bfae07481bb8461cc" kind="function"><name>winner</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a7e34cff69495db56cd9b72679c7ee9f0" kind="function"><name>linhaAnterior</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a3c7ee4730f880762a2c2d701d4595fa3" kind="function"><name>colunaAnterior</name></member>
+    <member refid="_camada_01de_01_dados_8h_1a4fd7b6c4be7ce266e46cd4f63e6f48fa" kind="function"><name>linhaaa</name></member>
+    <member refid="_camada_01de_01_dados_8h_1af35e61f379420082b8510cac826ef0cb" kind="function"><name>colunaaa</name></member>
+    <member refid="_camada_01de_01_dados_8h_1aa1b5dbe15baf7d66d0a324ffd92ce0f3" kind="function"><name>jogAtual</name></member>
+    <member refid="_camada_01de_01_dados_8h_1af439769cc6b4f943152652a669d24489" kind="function"><name>numJogada</name></member>
+  </compound>
+  <compound refid="_c_make_lists_8txt" kind="file"><name>CMakeLists.txt</name>
+  </compound>
+  <compound refid="_guiao5_8md" kind="file"><name>Guiao5.md</name>
+  </compound>
+  <compound refid="_interface_8c" kind="file"><name>Interface.c</name>
+    <member refid="_interface_8c_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="_interface_8c_1aa0b6c1689e60ac852a73d67e066c1df5" kind="function"><name>mostrar_tabuleiro</name></member>
+    <member refid="_interface_8c_1a24da95ebeede4a540e37790ce8be359b" kind="function"><name>interpretador</name></member>
+    <member refid="_interface_8c_1a080221f1fb3ebae3e0e8033b1c9b7582" kind="function"><name>infoDoJogo</name></member>
+    <member refid="_interface_8c_1a33d09196f922a638847c19f3aca3fc3c" kind="function"><name>prompt</name></member>
+    <member refid="_interface_8c_1ac6ba6903841d89881ec2a82a92e78e97" kind="function"><name>guarda_tabuleiro</name></member>
+    <member refid="_interface_8c_1ac26e0d7ed56680d6fc065460680c854b" kind="function"><name>le_Tabuleiro</name></member>
+    <member refid="_interface_8c_1afe6681136412d180864cf8a98074616e" kind="function"><name>guarda_jogada</name></member>
+    <member refid="_interface_8c_1a8b9a69824721b40b61bc274606db4574" kind="function"><name>imprime_lista_jogadas</name></member>
+    <member refid="_interface_8c_1ac1accaecb5b3613a5d4bd15f4e0daada" kind="function"><name>comandoPos</name></member>
+    <member refid="_interface_8c_1a137eeea7ee5d9588403bd6ac8b1efa2e" kind="function"><name>numeroValido</name></member>
+  </compound>
+  <compound refid="_interface_8h" kind="file"><name>Interface.h</name>
+    <member refid="_interface_8h_1aa0b6c1689e60ac852a73d67e066c1df5" kind="function"><name>mostrar_tabuleiro</name></member>
+    <member refid="_interface_8h_1a24da95ebeede4a540e37790ce8be359b" kind="function"><name>interpretador</name></member>
+    <member refid="_interface_8h_1a33d09196f922a638847c19f3aca3fc3c" kind="function"><name>prompt</name></member>
+    <member refid="_interface_8h_1ac6ba6903841d89881ec2a82a92e78e97" kind="function"><name>guarda_tabuleiro</name></member>
+    <member refid="_interface_8h_1ac26e0d7ed56680d6fc065460680c854b" kind="function"><name>le_Tabuleiro</name></member>
+    <member refid="_interface_8h_1afe6681136412d180864cf8a98074616e" kind="function"><name>guarda_jogada</name></member>
+    <member refid="_interface_8h_1a8b9a69824721b40b61bc274606db4574" kind="function"><name>imprime_lista_jogadas</name></member>
+    <member refid="_interface_8h_1a080221f1fb3ebae3e0e8033b1c9b7582" kind="function"><name>infoDoJogo</name></member>
+    <member refid="_interface_8h_1ac1accaecb5b3613a5d4bd15f4e0daada" kind="function"><name>comandoPos</name></member>
+    <member refid="_interface_8h_1a137eeea7ee5d9588403bd6ac8b1efa2e" kind="function"><name>numeroValido</name></member>
+  </compound>
+  <compound refid="_listas_ligadas_8c" kind="file"><name>ListasLigadas.c</name>
+    <member refid="_listas_ligadas_8c_1ae3b99323b6f8f35d80bb69ff1a27985e" kind="function"><name>criar_lista</name></member>
+    <member refid="_listas_ligadas_8c_1a37ba5fc3cfddb6bc94d4b54b00bc696e" kind="function"><name>insere_cabeca</name></member>
+    <member refid="_listas_ligadas_8c_1abfcb205f3eb670157be0d1221021714b" kind="function"><name>devolve_cabeca</name></member>
+    <member refid="_listas_ligadas_8c_1ad9380152361127432c55c1c6067e05ae" kind="function"><name>proximo</name></member>
+    <member refid="_listas_ligadas_8c_1a9026a681a68322b5ec7f07137b864cbd" kind="function"><name>remove_cabeca</name></member>
+    <member refid="_listas_ligadas_8c_1a4c10928f7acaa4e3de3760cea0dfd9c0" kind="function"><name>lista_esta_vazia</name></member>
+    <member refid="_listas_ligadas_8c_1a412bdb892988b834dbbf5258b8ef07c6" kind="function"><name>numElementos</name></member>
+  </compound>
+  <compound refid="_listas_ligadas_8h" kind="file"><name>ListasLigadas.h</name>
+    <member refid="_listas_ligadas_8h_1ad533bd9f5435fea5bd7ee9a6b8cf221e" kind="typedef"><name>NodoLista</name></member>
+    <member refid="_listas_ligadas_8h_1ac63b3952d3b1c0abee7ff9f58682ae6a" kind="typedef"><name>LISTA</name></member>
+    <member refid="_listas_ligadas_8h_1ae3b99323b6f8f35d80bb69ff1a27985e" kind="function"><name>criar_lista</name></member>
+    <member refid="_listas_ligadas_8h_1a37ba5fc3cfddb6bc94d4b54b00bc696e" kind="function"><name>insere_cabeca</name></member>
+    <member refid="_listas_ligadas_8h_1abfcb205f3eb670157be0d1221021714b" kind="function"><name>devolve_cabeca</name></member>
+    <member refid="_listas_ligadas_8h_1ad9380152361127432c55c1c6067e05ae" kind="function"><name>proximo</name></member>
+    <member refid="_listas_ligadas_8h_1a9026a681a68322b5ec7f07137b864cbd" kind="function"><name>remove_cabeca</name></member>
+    <member refid="_listas_ligadas_8h_1a4c10928f7acaa4e3de3760cea0dfd9c0" kind="function"><name>lista_esta_vazia</name></member>
+    <member refid="_listas_ligadas_8h_1a412bdb892988b834dbbf5258b8ef07c6" kind="function"><name>numElementos</name></member>
+  </compound>
+  <compound refid="_logica_8c" kind="file"><name>Logica.c</name>
+    <member refid="_logica_8c_1a6821bafc3c88dfb2e433a095df9940c6" kind="define"><name>BUF_SIZE</name></member>
+    <member refid="_logica_8c_1a932cbc9190ddf28b748fc4b9bb300fc2" kind="variable"><name>ultima_jogada</name></member>
+    <member refid="_logica_8c_1af826ff0e515724e7e5f8db06c86ecc77" kind="variable"><name>temporaria</name></member>
+    <member refid="_logica_8c_1a81c495a5cea9a5300f26f74660c4bed4" kind="variable"><name>tab</name></member>
+    <member refid="_logica_8c_1a9717e7bbecb906637e86cef6da3d83c2" kind="variable"><name>return</name></member>
+    <member refid="_logica_8c_1ac313d7e553b1e2b5f266acb9bfff8141" kind="function"><name>jogar</name></member>
+    <member refid="_logica_8c_1a29d47f0e43124e57b790efda4631e0ef" kind="function"><name>jogadaValida</name></member>
+    <member refid="_logica_8c_1ab0a22d7247e74d4c25bb66d827bfe407" kind="function"><name>jogoAcabou</name></member>
+    <member refid="_logica_8c_1adad282b5f50fd968fb0e96357c502674" kind="function"><name>vizinhas</name></member>
+    <member refid="_logica_8c_1a4c3b2b1dc7addb69027e1f9aaaa6290a" kind="function"><name>jogadaAleatoria</name></member>
+    <member refid="_logica_8c_1a587d4262429b9069f72554ab81b40d17" kind="function"><name>mcts</name></member>
+    <member refid="_logica_8c_1a13ad88f9c16d9030931ef93e8be40063" kind="function"><name>mctsSearcing</name></member>
+    <member refid="_logica_8c_1af8bdee0375a687f3de16c08a1c0971e5" kind="function"><name>jogoAcabouMCTS</name></member>
+    <member refid="_logica_8c_1a3fda55f7ddafecce5e1a88a6fc7dd37f" kind="function"><name>while</name></member>
+    <member refid="_logica_8c_1ac2c74db18ada13fc8b4a568588d5903b" kind="function"><name>vizinhasDaCasaVencedora</name></member>
+    <member refid="_logica_8c_1a9162a66f09c276ee0a7e9abc4cb94832" kind="function"><name>imprimeLista</name></member>
+    <member refid="_logica_8c_1ae8f5a00d01ee6de8d93843a87b389035" kind="function"><name>distancia_euclidiana</name></member>
+  </compound>
+  <compound refid="_logica_8h" kind="file"><name>Logica.h</name>
+    <member refid="_logica_8h_1ac313d7e553b1e2b5f266acb9bfff8141" kind="function"><name>jogar</name></member>
+    <member refid="_logica_8h_1a29d47f0e43124e57b790efda4631e0ef" kind="function"><name>jogadaValida</name></member>
+    <member refid="_logica_8h_1ab0a22d7247e74d4c25bb66d827bfe407" kind="function"><name>jogoAcabou</name></member>
+    <member refid="_logica_8h_1adad282b5f50fd968fb0e96357c502674" kind="function"><name>vizinhas</name></member>
+    <member refid="_logica_8h_1a4c3b2b1dc7addb69027e1f9aaaa6290a" kind="function"><name>jogadaAleatoria</name></member>
+    <member refid="_logica_8h_1a221543c72d65884a5465538a1db3b8b0" kind="function"><name>mcts</name></member>
+    <member refid="_logica_8h_1af8bdee0375a687f3de16c08a1c0971e5" kind="function"><name>jogoAcabouMCTS</name></member>
+    <member refid="_logica_8h_1ac6997e79810d91fc9e12bab17e729e64" kind="function"><name>verificaErro</name></member>
+    <member refid="_logica_8h_1ac2c74db18ada13fc8b4a568588d5903b" kind="function"><name>vizinhasDaCasaVencedora</name></member>
+    <member refid="_logica_8h_1a13ad88f9c16d9030931ef93e8be40063" kind="function"><name>mctsSearcing</name></member>
+    <member refid="_logica_8h_1a3384c56333c301445cc261be7acca14d" kind="function"><name>imprimeLista</name></member>
+    <member refid="_logica_8h_1ae8f5a00d01ee6de8d93843a87b389035" kind="function"><name>distancia_euclidiana</name></member>
+  </compound>
+  <compound refid="main_8c" kind="file"><name>main.c</name>
+    <member refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="md__c_1__users_franc__c_lion_projects__projeto_l_i2__projeto__guiao5" kind="page"><name>md_C:_Users_franc_CLionProjects_ProjetoLI2_Projeto_Guiao5</name>
+  </compound>
+  <compound refid="dir_ed353eea8d78a173a119b387b77c750d" kind="dir"><name>C:/Users/franc/CLionProjects</name>
+  </compound>
+  <compound refid="dir_f7fabca4bb866a16b5d9c674c569272f" kind="dir"><name>C:/Users/franc/CLionProjects/ProjetoLI2/Projeto</name>
+  </compound>
+  <compound refid="dir_daf95ddc1586b4e1c9bf97093a82e431" kind="dir"><name>C:/Users/franc/CLionProjects/ProjetoLI2</name>
+  </compound>
+</doxygenindex>

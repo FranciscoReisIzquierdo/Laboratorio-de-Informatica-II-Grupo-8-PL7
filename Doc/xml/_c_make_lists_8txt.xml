@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="_c_make_lists_8txt" kind="file" language="C++">
+    <compoundname>CMakeLists.txt</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">cmake_minimum_required(VERSION<sp/>3.15)</highlight></codeline>
+<codeline lineno="2"><highlight class="normal">project(ProjetoLI2<sp/>C)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal">set(CMAKE_C_STANDARD<sp/>99)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">add_executable(ProjetoLI2<sp/><ref refid="main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>.c<sp/></highlight><highlight class="stringliteral">&quot;Logica.c&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Logica.h&quot;</highlight><highlight class="normal"><sp/>Interface.c<sp/>Interface.h<sp/></highlight><highlight class="stringliteral">&quot;Camada<sp/>de<sp/>Dados.c&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Camada<sp/>de<sp/>Dados.h&quot;</highlight><highlight class="normal"><sp/>ListasLigadas.c<sp/>ListasLigadas.h)</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/CMakeLists.txt"/>
+  </compounddef>
+</doxygen>
