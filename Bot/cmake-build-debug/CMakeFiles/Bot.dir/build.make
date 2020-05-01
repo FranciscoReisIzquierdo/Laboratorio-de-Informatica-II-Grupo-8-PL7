@@ -48,52 +48,112 @@ CMAKE_SOURCE_DIR = C:\Users\franc\CLionProjects\ProjetoLI2\Bot
 CMAKE_BINARY_DIR = C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug
 
 # Include any dependencies generated for this target.
-include CMakeFiles/Bot.dir/depend.make
+include CMakeFiles/bot.dir/depend.make
 
 # Include the progress variables for this target.
-include CMakeFiles/Bot.dir/progress.make
+include CMakeFiles/bot.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include CMakeFiles/Bot.dir/flags.make
+include CMakeFiles/bot.dir/flags.make
 
-CMakeFiles/Bot.dir/main.c.obj: CMakeFiles/Bot.dir/flags.make
-CMakeFiles/Bot.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Bot.dir/main.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Bot.dir\main.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c
+CMakeFiles/bot.dir/main.c.obj: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/main.c.obj: ../main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/bot.dir/main.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\bot.dir\main.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c
 
-CMakeFiles/Bot.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Bot.dir/main.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c > CMakeFiles\Bot.dir\main.c.i
+CMakeFiles/bot.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/main.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c > CMakeFiles\bot.dir\main.c.i
 
-CMakeFiles/Bot.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Bot.dir/main.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c -o CMakeFiles\Bot.dir\main.c.s
+CMakeFiles/bot.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/main.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Bot\main.c -o CMakeFiles\bot.dir\main.c.s
 
-# Object files for target Bot
-Bot_OBJECTS = \
-"CMakeFiles/Bot.dir/main.c.obj"
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj: C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c
 
-# External object files for target Bot
-Bot_EXTERNAL_OBJECTS =
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c > CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c.i
 
-Bot.exe: CMakeFiles/Bot.dir/main.c.obj
-Bot.exe: CMakeFiles/Bot.dir/build.make
-Bot.exe: CMakeFiles/Bot.dir/linklibs.rsp
-Bot.exe: CMakeFiles/Bot.dir/objects1.rsp
-Bot.exe: CMakeFiles/Bot.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Bot.exe"
-	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Bot.dir\link.txt --verbose=$(VERBOSE)
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Interface.c.s
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj: C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada\ de\ Dados.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada_de_Dados.c.obj   -c "C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada de Dados.c"
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada de Dados.c" > CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada_de_Dados.c.i
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada de Dados.c" -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Camada_de_Dados.c.s
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj: C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c > CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c.i
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\Logica.c.s
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj: CMakeFiles/bot.dir/flags.make
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj: C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c.obj   -c C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c > CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c.i
+
+CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c -o CMakeFiles\bot.dir\C_\Users\franc\CLionProjects\ProjetoLI2\Projeto\ListasLigadas.c.s
+
+# Object files for target bot
+bot_OBJECTS = \
+"CMakeFiles/bot.dir/main.c.obj" \
+"CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj" \
+"CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj" \
+"CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj" \
+"CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj"
+
+# External object files for target bot
+bot_EXTERNAL_OBJECTS =
+
+bot.exe: CMakeFiles/bot.dir/main.c.obj
+bot.exe: CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj
+bot.exe: CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj
+bot.exe: CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj
+bot.exe: CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj
+bot.exe: CMakeFiles/bot.dir/build.make
+bot.exe: CMakeFiles/bot.dir/linklibs.rsp
+bot.exe: CMakeFiles/bot.dir/objects1.rsp
+bot.exe: CMakeFiles/bot.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable bot.exe"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\bot.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/Bot.dir/build: Bot.exe
+CMakeFiles/bot.dir/build: bot.exe
 
-.PHONY : CMakeFiles/Bot.dir/build
+.PHONY : CMakeFiles/bot.dir/build
 
-CMakeFiles/Bot.dir/clean:
-	$(CMAKE_COMMAND) -P CMakeFiles\Bot.dir\cmake_clean.cmake
-.PHONY : CMakeFiles/Bot.dir/clean
+CMakeFiles/bot.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\bot.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/bot.dir/clean
 
-CMakeFiles/Bot.dir/depend:
+CMakeFiles/bot.dir/depend:
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\franc\CLionProjects\ProjetoLI2\Bot C:\Users\franc\CLionProjects\ProjetoLI2\Bot C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles\Bot.dir\DependInfo.cmake --color=$(COLOR)
-.PHONY : CMakeFiles/Bot.dir/depend
+.PHONY : CMakeFiles/bot.dir/depend
 

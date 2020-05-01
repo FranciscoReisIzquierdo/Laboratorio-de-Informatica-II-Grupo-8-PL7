@@ -6,19 +6,17 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/franc/CLionProjects/ProjetoLI2/Bot/main.c
+../Projeto/Camada de Dados.h
 C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada de Dados.h
-
-C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c
-stdio.h
--
-string.h
--
+../Projeto/Interface.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h
+../Projeto/Logica.h
+C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.h
 stdlib.h
 -
-Camada de Dados.h
+
 C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada de Dados.h
-Interface.h
-C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h
 
 C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.h
 stdio.h

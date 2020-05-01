@@ -52,12 +52,12 @@ CMAKE_BINARY_DIR = C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Bot.dir/all
+all: CMakeFiles/bot.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Bot.dir/clean
+clean: CMakeFiles/bot.dir/clean
 
 .PHONY : clean
 
@@ -67,31 +67,31 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
-# Target rules for target CMakeFiles/Bot.dir
+# Target rules for target CMakeFiles/bot.dir
 
 # All Build rule for target.
-CMakeFiles/Bot.dir/all:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/depend
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target Bot"
-.PHONY : CMakeFiles/Bot.dir/all
+CMakeFiles/bot.dir/all:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/depend
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target bot"
+.PHONY : CMakeFiles/bot.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Bot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/Bot.dir/all
+CMakeFiles/bot.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles 6
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/bot.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\franc\CLionProjects\ProjetoLI2\Bot\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/Bot.dir/rule
+.PHONY : CMakeFiles/bot.dir/rule
 
 # Convenience name for target.
-Bot: CMakeFiles/Bot.dir/rule
+bot: CMakeFiles/bot.dir/rule
 
-.PHONY : Bot
+.PHONY : bot
 
 # clean rule for target.
-CMakeFiles/Bot.dir/clean:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/clean
-.PHONY : CMakeFiles/Bot.dir/clean
+CMakeFiles/bot.dir/clean:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/clean
+.PHONY : CMakeFiles/bot.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

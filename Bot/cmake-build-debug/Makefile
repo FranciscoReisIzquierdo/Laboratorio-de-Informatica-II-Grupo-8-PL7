@@ -110,17 +110,125 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Bot
+# Target rules for targets named bot
 
 # Build rule for target.
-Bot: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Bot
-.PHONY : Bot
+bot: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 bot
+.PHONY : bot
 
 # fast build rule for target.
-Bot/fast:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/build
-.PHONY : Bot/fast
+bot/fast:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/build
+.PHONY : bot/fast
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.obj: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.obj
+
+# target to build an object file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.i: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.i
+
+# target to preprocess a source file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.i
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.s: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.s
+
+# target to generate assembly for a file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.s
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.obj: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.obj
+
+# target to build an object file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.i: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.i
+
+# target to preprocess a source file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.i
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.s: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.s
+
+# target to generate assembly for a file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.s
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.obj: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.obj
+
+# target to build an object file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.i: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.i
+
+# target to preprocess a source file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.i
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.s: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.s
+
+# target to generate assembly for a file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.s
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.obj: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.obj
+
+# target to build an object file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.i: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.i
+
+# target to preprocess a source file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.i
+
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.s: C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s
+
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.s
+
+# target to generate assembly for a file
+C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s:
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s
+.PHONY : C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.s
 
 main.obj: main.c.obj
 
@@ -128,7 +236,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -137,7 +245,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/main.c.i
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -146,7 +254,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\Bot.dir\build.make CMakeFiles/Bot.dir/main.c.s
+	$(MAKE) -f CMakeFiles\bot.dir\build.make CMakeFiles/bot.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -155,9 +263,21 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Bot
+	@echo ... bot
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.obj
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.i
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.s
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.obj
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.i
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.s
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.obj
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.i
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.s
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.obj
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.i
+	@echo ... C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

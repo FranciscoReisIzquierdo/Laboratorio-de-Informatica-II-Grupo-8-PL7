@@ -1,3 +1,3 @@
-C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/ProjetoLI2.dir
-C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/franc/CLionProjects/LI2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/cmake-build-debug/CMakeFiles/ProjetoLI2.dir
+C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada de Dados.c" "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/cmake-build-debug/CMakeFiles/Bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Camada_de_Dados.c.obj"
+  "C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c" "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/cmake-build-debug/CMakeFiles/Bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Interface.c.obj"
+  "C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c" "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/cmake-build-debug/CMakeFiles/Bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/ListasLigadas.c.obj"
+  "C:/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c" "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/cmake-build-debug/CMakeFiles/Bot.dir/C_/Users/franc/CLionProjects/ProjetoLI2/Projeto/Logica.c.obj"
   "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/main.c" "C:/Users/franc/CLionProjects/ProjetoLI2/Bot/cmake-build-debug/CMakeFiles/Bot.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
