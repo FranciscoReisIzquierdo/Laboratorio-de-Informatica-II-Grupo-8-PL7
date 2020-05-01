@@ -179,14 +179,11 @@ int jogoAcabouMCTS(ESTADO *e, COORDENADA c){
     return count;
 }
 
-<<<<<<< HEAD
-=======
 int verificaErro(ESTADO *e, COORDENADA temp){
         COORDENADA save= e->ultima_jogada;
         e->tab [e->ultima_jogada.linha][e->ultima_jogada.coluna]= PRETA;
         e->tab [temp.linha][temp.coluna]= BRANCA;
         e->ultima_jogada= temp;
->>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12
 
         LISTA temporaria= vizinhas(e);
         while(lista_esta_vazia(temporaria)){
