@@ -12,12 +12,6 @@ int main(int argc, char *argv[ ]) {
     COORDENADA c = mcts(e, vizinhas(e));
     guarda_jogada(e, c);
     jogar(e, c);
-    if (jogoAcabou(e) == 1){
-        mostrar_tabuleiro(e);
-        exit(0);
-    }
-    else {
-        guarda_tabuleiro(e, fout);
-        return 1;
-    }
+    guarda_tabuleiro(e, fout);
+    return 1;
 }
