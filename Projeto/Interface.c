@@ -75,11 +75,7 @@ int interpretador(ESTADO *e) {
         }
     else if (strlen(command) == 2 && sscanf(command, "%[a-h]%[1-8]", col, lin) == 2) {
         COORDENADA coord = {*col - 'a', *lin - '1'};
-<<<<<<< HEAD
-        jogar(e, coord);
-        mostrar_tabuleiro(e);
-=======
-        if (jogadaValida(e, coord) == 0) prompt(e);
+	if (jogadaValida(e, coord) == 0) prompt(e);
         else {
             vizinhas(e);  guarda_jogada(e, coord);  jogar(e, coord);   //guarda a jogada e joga
             if (jogoAcabou(e) == 1){     //verifica se o jogo acabou
@@ -87,7 +83,6 @@ int interpretador(ESTADO *e) {
             }
             prompt(e);
         }
->>>>>>> 707da79a6be626c2ea6848d0c5e4da4c5af1ad12
     }
     else {
         printf("Jogada fora das dimensoes do tabuleiro. Jogue de novo\n");  prompt(e);
