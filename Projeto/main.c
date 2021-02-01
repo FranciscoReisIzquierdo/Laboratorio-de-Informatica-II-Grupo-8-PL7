@@ -3,6 +3,6 @@
 
 int main() {
     ESTADO *e = inicializar_estado();
-    prompt(e);
+    prompt(e);    
 }
 
