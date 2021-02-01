@@ -30,7 +30,7 @@ int interpretador(ESTADO *e) {
     char *cmd = strtok(command, " ");
     if (strcmp(cmd, "jog") == 0) {  //Comando jog (Bot)
         printf("Jogada efectuada pelo bot\n");
-        guarda_jogada(e, jogadaAleatoria(vizinhas(e)));
+        guarda_jogada(e, jogadaAleatoria(vizinhas(e))); 
         jogar(e, jogadaAleatoria(vizinhas(e)));  //guarda a jogada e joga
         if (jogoAcabou(e) == 1) {     //verifica se o jogo acabou
             mostrar_tabuleiro(e);
