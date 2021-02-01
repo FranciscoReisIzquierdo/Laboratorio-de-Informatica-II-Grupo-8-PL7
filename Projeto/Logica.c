@@ -75,7 +75,7 @@ LISTA vizinhas(ESTADO *e) {
                 casaVazia->linha = line; casaVazia->coluna = coluna;
                 vizinhasVazias = insere_cabeca(vizinhasVazias, casaVazia);
             }
-        }
+        } 
     }
     return vizinhasVazias;
 }
