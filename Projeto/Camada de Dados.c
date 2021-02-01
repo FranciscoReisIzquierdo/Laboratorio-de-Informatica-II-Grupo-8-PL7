@@ -31,7 +31,7 @@ int giveUltLinha(ESTADO *e){
 void incrJogada(ESTADO *e){
     if (e-> jogador_atual== 2)
         e-> num_jogadas++;
-    else e-> num_jogadas = e->num_jogadas;
+    else e-> num_jogadas = e->num_jogadas; 
 }
 
 void changePlayer(ESTADO *e){
