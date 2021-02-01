@@ -52,7 +52,7 @@ int numElementos(LISTA L){
     int num= 0;
     while(lista_esta_vazia(L)!= 0){
         num++;
-        L= L->proxCoord;
+        L= L->proxCoord; 
     }
     return num;
 }
