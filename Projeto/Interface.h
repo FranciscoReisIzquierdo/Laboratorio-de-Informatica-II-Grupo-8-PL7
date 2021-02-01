@@ -26,7 +26,7 @@ void prompt(ESTADO *e);
 /**
 \brief Função responsável por em cada iteração, chamar a função que mostra o tabuleiro do jogo, as informações do jogo e o interpretador de comandos
  * @param e Apontador para o estado
- */
+ */ 
 void prompt(ESTADO *e);
 
 /**
