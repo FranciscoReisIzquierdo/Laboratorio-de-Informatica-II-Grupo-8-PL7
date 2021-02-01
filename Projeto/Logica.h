@@ -15,7 +15,7 @@ Definição da lógica do jogo Rastros e do bot
  * @param c Coordenada efectuada pelo jogador
  * @return Retorna um inteiro de forma a garantir a conclusão da jogada pretendida
  */
-int jogar(ESTADO *e, COORDENADA c);
+int jogar(ESTADO *e, COORDENADA c); 
 
 /**
 \brief Esta função verifica se a coordenada pretendida pelo jogador é válida, avaliando todos os casos possíveis dado o estado atual do jogo
