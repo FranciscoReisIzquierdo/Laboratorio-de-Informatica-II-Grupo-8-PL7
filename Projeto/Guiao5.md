@@ -44,7 +44,7 @@ O interpretador de comandos deverá funcionar da seguinte maneira:
   1. Ler uma linha (usando fgets)
   2. Separar a linha por espaços (por exemplo utilizando sscanf ou strtok)
   3. Conforme o comando a executar, chamar a função correspondente do
-  interface ou da lógica do programa e depois do interface.
+  interface ou da lógica do programa e depois do interface. 
 
 **interpretador**: Função que recebe o estado atual do jogo e conforme os argumentos (neste caso *COORDENADAS*) da função **jogar**, aplica o comando da jogada a efectuar.
 
