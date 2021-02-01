@@ -47,7 +47,7 @@ LISTA proximo(LISTA L);
 \brief Remove a cabeça da lista (libertando o espaço ocupado) e devolve a cauda
  * @param L Lista que s pertende remover a cabeça
  * @return Lista resultante da remoção da cabeça da lista anterior
- */
+ */ 
 LISTA remove_cabeca(LISTA L);
 
 /**
